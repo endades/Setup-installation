@@ -1,18 +1,9 @@
-# Instalación y configuración
 
-- **Artículos**
-- **Requisitos del sistema**
-  - Cliente/PC individual
-  - Servidor
-  - Soluciones de cliente en servidor
-- **Conexión de red e internet**
-- **Información Técnica**
-  - Configuración del sistema
-  - Configuración de la llave
-  - Nombres de ficheros y directorios
-  - Ajustes del antivirus
-  - Ajustes del firewall
-- **Inicio de sesión**
-- **Servicio y mantenimiento**
-- **Reporte de estado**
+<!-- [![Endades](Imagenes/endades.png)](https://endades.com/) -->
 
+<a href="https://endades.com/">
+  <img src="Imagenes/endades.png" alt="Endades" width="400" />
+</a>
+
+**Para más información, no dude en contactarnos por correo electrónico:**  
+📧 [soporte@endades.com](mailto:soporte@endades.com)

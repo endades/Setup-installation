@@ -117,52 +117,9 @@ Se requiere una conexión de red estable para procesar datos mediante recursos c
 
 ---
 
-## Información Técnica
+## 4. Información Técnica
 
-## Directorio Temporal
-
-Durante la ejecución del programa, los datos se almacenan en una carpeta temporal específica para cada usuario.
-
-> ⚠️ **Atención**  
-> Con las licencias de dongle de usuario único y dongle de servidor, el directorio temporal se encuentra en el soporte de datos local del cliente.  
-> En la solución con servidor terminal, el directorio temporal se encuentra en el disco local del servidor terminal.  
-> Se crea una carpeta independiente en el directorio temporal para cada usuario.  
-> Se deben disponer al menos **30 GB de espacio libre** en disco para **cada usuario** en el servidor terminal.
-
-- Este directorio debe estar en un disco **local** y **físico**.
-- Debe tener **al menos 30 GB libres**.
-- Se recomienda el uso de **discos SSD**, por su mayor velocidad frente a HDD.
-- Ruta típica del directorio temporal:  
-  `{Unidad}:\Users\{nombre_usuario}\AppData\Local\OFCAS\…`
-- No se recomienda eliminar información de esta carpeta.
-  Si se elimina, el programa reconstruirá los datos al iniciarse nuevamente, lo cual puede alargar el tiempo de carga.
-- Los usuarios deben tener **permisos de lectura, escritura y modificación** tanto en este directorio como en el del programa.
-
----
-
-## Licenciamiento con Llave USB
-
-### Llave USB Única
-
-- El programa se licencia con una **llave USB individual**.
-- Esta llave es entregada junto con la instalación del software.
-- Se conecta directamente al PC.
-- ❌ **No es posible el acceso remoto (Escritorio Remoto) a un PC con una llave de este tipo conectada.**
-
-### Llave USB de Servidor
-
-- Se usa para licencias en redes.
-- Es necesario configurar una **carpeta compartida en red** con letra de unidad asignada.  
-  Ejemplo: `\\Server\Logikal` → `L:\Logikal\`
-- El programa utiliza los **puertos TCP/UDP 1947** para comunicarse con la llave.
-- Si la llave y los clientes están en diferentes rangos IP, se debe activar **IP forwarding**.
-- Todos los equipos deben tener instalado el **driver de la llave**.  
-  Se puede descargar desde: [http://dongle.orgadata.com](http://dongle.orgadata.com)
-- El driver instala el servicio **"Sentinel LDK License Manager"**, que debe estar siempre activo en segundo plano.
-
----
-
-## Conexión a Internet
+### 4.1. Conexión a Internet
 
 Se necesita conexión a Internet para:
 
@@ -170,11 +127,10 @@ Se necesita conexión a Internet para:
 - Soporte técnico  
 - Reportes de estado  
 - Mantenimiento remoto  
-- Sistema de ayuda en línea  
-- Boletines de noticias  
+- Sistema de ayuda en línea 
 - Registro de cambios  
 
-### Velocidades Recomendadas
+### 4.2. Velocidades Recomendadas
 
 | Tipo     | Mínima           | Recomendada       |
 |----------|------------------|-------------------|
@@ -183,17 +139,16 @@ Se necesita conexión a Internet para:
 
 ---
 
-## Ajustes del Cortafuegos
+### 4.3. Ajustes del Cortafuegos
 
 - Las actualizaciones provienen de:  
   `www.orgadataupdate.de (84.201.70.172)`
 - Se utilizan los **puertos FTP 21 y 11965**.
 - Los **puertos FTP pasivos del 50000 al 52000** son necesarios para actualizaciones y subidas (como reportes).
-- Las llaves de servidor en red usan los **puertos TCP y UDP 1947**.
 
 ---
 
-## Conexión de Red
+### 4.4. Conexión de Red
 
 > ⚠️ **Atención:**  
 > Para garantizar el acceso a unidades de red, estas deben declararse como **"de confianza"**.  
@@ -207,7 +162,7 @@ El tratamiento de datos en red mediante carpetas compartidas o VPN requiere:
 
 ---
 
-## Seguridad de los Datos
+### 4.5. Seguridad de los Datos
 
-- Antes de realizar una copia de seguridad, asegúrese de que **LogiKal está completamente cerrado**, incluyendo todas sus carpetas y subcarpetas.
+- Antes de realizar una copia de seguridad, asegúrese de que **ENBLAU está completamente cerrado**, incluyendo todas sus carpetas y subcarpetas.
 - ❌ **No es necesario hacer copia de las carpetas temporales.**
