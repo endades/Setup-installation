@@ -141,8 +141,6 @@ Se necesita conexión a Internet para:
 
 ### 4.3. Ajustes del Cortafuegos
 
-- Las actualizaciones provienen de:  
-  `www.orgadataupdate.de (84.201.70.172)`
 - Se utilizan los **puertos FTP 21 y 11965**.
 - Los **puertos FTP pasivos del 50000 al 52000** son necesarios para actualizaciones y subidas (como reportes).
 

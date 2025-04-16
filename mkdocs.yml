@@ -2,7 +2,7 @@ site_name: Endades
 
 theme:
   name: readthedocs
-  # logo: img/endades2.png
+  # logo: img/endades.png
   highlightjs: true
 
 

@@ -1,7 +1,7 @@
 
 /* Mantener el color de la sección superior (Documentos y Search docs) */
 .wy-side-nav-search {
-    background-color: #0098da; /* Color original del tema readthedocs */
+    background-color: #FFFFFF; /* Color original del tema readthedocs */
 }
 
 /* Cambiar el color de fondo de la cinta lateral */
@@ -62,3 +62,20 @@ footer {
     display: none;
 }
 
+
+
+  /* Desactiva el clic en el logo (lo hace estático) */
+.wy-side-nav-search > a {
+    pointer-events: none;
+    cursor: default;
+    background-image: url("../Imagenes/endades.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    display: block;
+    line-height: 120px;
+    color: transparent;
+  }
+  
+  
