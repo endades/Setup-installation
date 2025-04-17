@@ -160,7 +160,3 @@ El tratamiento de datos en red mediante carpetas compartidas o VPN requiere:
 
 ---
 
-### 4.5. Seguridad de los Datos
-
-- Antes de realizar una copia de seguridad, asegúrese de que **ENBLAU está completamente cerrado**, incluyendo todas sus carpetas y subcarpetas.
-- ❌ **No es necesario hacer copia de las carpetas temporales.**

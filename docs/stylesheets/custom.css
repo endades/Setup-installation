@@ -63,19 +63,20 @@ footer {
 }
 
 
-
   /* Desactiva el clic en el logo (lo hace estático) */
 .wy-side-nav-search > a {
     pointer-events: none;
     cursor: default;
-    background-image: url("../Imagenes/endades.png");
+    background-image: url("../Imagenes/endades2.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    height: 120px;
+    background-size: 200px 35px;
+    height: 80px;
     display: block;
-    line-height: 120px;
+    line-height: 80px;
     color: transparent;
   }
+
+
   
   

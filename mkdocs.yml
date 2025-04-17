@@ -1,4 +1,5 @@
-site_name: Endades
+site_name: Endades Support
+site_favicon: img/favicon.ico
 
 theme:
   name: readthedocs
@@ -20,4 +21,9 @@ extra:
     edit_page: true
 
 copyright: " "
+
+nav:
+  - Inicio: index.md
+  - Requisitos del sistema: Requisitos_Sistema.md
+  - Configuración del sistema: Configuracion_Sistema.md
 
