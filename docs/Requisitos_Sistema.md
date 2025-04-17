@@ -1,16 +1,16 @@
 # Requisitos del sistema
 
-## 1. Requisitos de Instalación del Cliente
+## 1. Requisitos de instalación del cliente
 
 La instalación del cliente es una instalación local en un ordenador.
 
 ---
 
-### 1.1 Requisitos Recomendados
+### 1.1 Requisitos recomendados
 
 | Componente       | Especificación                                              |
 |------------------|-------------------------------------------------------------|
-| Sistema Operativo | Windows 11 Pro; .NET Framework desde la versión 4.7.2      |
+| Sistema Operativo | Windows 11 Pro; .NET Framework desde la versión 4.8     |
 | Procesador        | Intel Core i7 Gen10 / AMD Ryzen 7 Serie 5000              |
 | Memoria           | Sistema operativo de 64 bits, 16 GB de RAM                 |
 | Disco Duro        | SSD, 150 GB de espacio disponible                          |
@@ -19,16 +19,16 @@ La instalación del cliente es una instalación local en un ordenador.
 
 ---
 
-### 1.2 Requisitos Mínimos
+### 1.2 Requisitos mínimos
 
 > **Nota:**  
 > Para lograr una mayor velocidad de funcionamiento, se recomienda utilizar discos duros SSD. Son mucho más rápidos en el procesamiento que los discos duros HDD convencionales.
 
 | Componente       | Especificación                                              |
 |------------------|-------------------------------------------------------------|
-| Sistema Operativo | Windows 10 Versión 22H2; .NET Framework desde la versión 4.7.2 |
+| Sistema Operativo | Windows 10 Versión 22H2; .NET Framework desde la versión 4.8 |
 | Procesador        | Intel Core i5 Gen10 / AMD Ryzen Serie 2000                |
-| Memoria           | Sistema operativo de 32 bits: 4 GB de RAM<br>Sistema operativo de 64 bits: 6 GB de RAM |
+| Memoria           | Sistema operativo de 64 bits: 4 GB de RAM<br>Sistema operativo de 64 bits: 6 GB de RAM |
 | Disco Duro        | 80 GB de espacio disponible                                |
 | Conexiones        | USB                                                        |
 | Resolución        | 1280 px x 1024 px                                          |
@@ -37,21 +37,21 @@ La instalación del cliente es una instalación local en un ordenador.
 
 ## 2. Servidor
 
-### 2.1. Solución Cliente-Servidor
+### 2.1. Solución cliente-servidor
 
 Se recomienda una solución cliente-servidor si el software debe distribuirse a varios clientes desde una ubicación central.  
 Para ello, el software solo necesita instalarse en un único servidor.
 
 ---
 
-### 2.2. Solución con Servidor Terminal
+### 2.2. Solución con servidor terminal
 
 Se recomienda una solución con servidor terminal si varios usuarios utilizan el software directamente en el servidor terminal.  
 En este caso, el software solo necesita instalarse en un único servidor terminal.
 
 ---
 
-### 2.3. Servidor Terminal con Acceso a Unidad de Red
+### 2.3. Servidor terminal con acceso a unidad de red
 
 Es posible combinar una solución con servidor terminal y una solución cliente-servidor.
 
@@ -60,7 +60,7 @@ También se pueden utilizar clientes a través de una solución cliente-servidor
 
 ---
 
-### 2.4. Solución de Virtualización
+### 2.4. Solución de virtualización
 
 La virtualización de servidores se utiliza cuando varios servidores virtuales deben funcionar sobre un mismo hardware físico.  
 Para ello, se instala un software de virtualización en un servidor anfitrión, el cual proporciona los recursos a las máquinas virtuales.
@@ -73,16 +73,16 @@ Para ello, se instala un software de virtualización en un servidor anfitrión, 
 
 ---
 
-### 2.5. Requisitos del Servidor
+### 2.5. Requisitos del servidor
 
-#### Sistemas Operativos Compatibles
+#### Sistemas operativos compatibles
 
 - Windows Server 2016  
 - Windows Server 2019  
 - Windows Server 2022  
 - .NET Framework versión 4.8  
 
-#### Discos Duros
+#### Discos duros
 
 > Para lograr una mayor velocidad de funcionamiento, se recomienda el uso de discos SSD.
 
@@ -90,7 +90,7 @@ Para ello, se instala un software de virtualización en un servidor anfitrión, 
 
 ## 3. Red y conexión a internet 
 
-### 3.1. Conexión a Internet
+### 3.1. Conexión a internet
 
 #### Requisitos Mínimos
 
@@ -99,17 +99,16 @@ Para ello, se instala un software de virtualización en un servidor anfitrión, 
 | Descarga         | 10 Mbit/s                |
 | Subida           | 1 Mbit/s                 |
 
-#### Servicios que requieren conexión a Internet
+#### Servicios que requieren conexión a internet
 
-- Actualizaciones    
-- Informes de estado  
+- Actualizaciones     
 - Mantenimiento remoto  
 - Sistema de ayuda en línea    
 - Registros de cambios (Changelogs)  
 
 ---
 
-### 3.2. Conexión de Red
+### 3.2. Conexión de red
 
 Se requiere una conexión de red estable para procesar datos mediante recursos compartidos y/o VPN en un entorno de red.
 
@@ -117,20 +116,18 @@ Se requiere una conexión de red estable para procesar datos mediante recursos c
 
 ---
 
-## 4. Información Técnica
+## 4. Información técnica
 
-### 4.1. Conexión a Internet
+### 4.1. Conexión a internet
 
 Se necesita conexión a Internet para:
 
 - Actualizaciones del programa  
-- Soporte técnico  
-- Reportes de estado  
+- Soporte técnico    
 - Mantenimiento remoto  
 - Sistema de ayuda en línea 
-- Registro de cambios  
 
-### 4.2. Velocidades Recomendadas
+### 4.2. Velocidades recomendadas
 
 | Tipo     | Mínima           | Recomendada       |
 |----------|------------------|-------------------|
@@ -139,14 +136,7 @@ Se necesita conexión a Internet para:
 
 ---
 
-### 4.3. Ajustes del Cortafuegos
-
-- Se utilizan los **puertos FTP 21 y 11965**.
-- Los **puertos FTP pasivos del 50000 al 52000** son necesarios para actualizaciones y subidas (como reportes).
-
----
-
-### 4.4. Conexión de Red
+### 4.3. Conexión de red
 
 > ⚠️ **Atención:**  
 > Para garantizar el acceso a unidades de red, estas deben declararse como **"de confianza"**.  

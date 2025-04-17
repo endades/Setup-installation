@@ -1,5 +1,5 @@
 site_name: Endades Support
-site_favicon: img/favicon.ico
+# site_favicon: img/favicon.ico
 
 theme:
   name: readthedocs

@@ -9,13 +9,13 @@
 
 ---
 
-# 📄 ¿Para qué sirve el documento de Requisitos y Configuraciones del Sistema?
+# ¿Para qué sirve el documento de requisitos y configuraciones del sistema?
 
 Este documento tiene como objetivo **informar a los usuarios o técnicos** sobre las condiciones mínimas y recomendadas que debe cumplir un PC para que la aplicación funcione correctamente.
 
 ---
 
-# 💡 ¿Por qué es importante?
+# ¿Por qué es importante?
 
 - **Evita problemas de instalación:**  
   Ayuda a asegurarse de que el sistema cumple con lo necesario antes de intentar instalar la app.
@@ -31,4 +31,4 @@ Este documento tiene como objetivo **informar a los usuarios o técnicos** sobre
 
 
 **Para más información, no dude en contactarnos por correo electrónico:**  
-📧 [soporte@endades.com](mailto:soporte@endades.com)
+[soporte@endades.com](mailto:soporte@endades.com)

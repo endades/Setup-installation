@@ -11,7 +11,7 @@ Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar c
 
 - La unidad de red donde esté compartida la carpeta de **Enblau**.
 - Las unidades de red del programa deben contener una **letra de unidad**. No basta con asignar un directorio sin una letra de unidad.
-- No es posible utilizar la aplicación del programa a través de una **ruta UNC**.
+- No es posible utilizar la aplicación del programa a través de una **
 - Cada archivo y carpeta en el directorio del programa.
 
 > **¡Atención!**  
@@ -19,16 +19,6 @@ Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar c
 
 - **Permisos de instalación:**  
   Se requieren permisos de administrador.
-
----
-
-### 1.2. Extensiones de fichero
-
-Las siguientes extensiones de archivo pertenecen a las soluciones de software Orgadata:
-
-| Extensión | Descripción                                      |
-|----------|--------------------------------------------------|
-|     |                                    |
 
 ---
 
