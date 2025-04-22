@@ -14,7 +14,7 @@ Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar c
 - No es posible utilizar la aplicación del programa a través de una **
 - Cada archivo y carpeta en el directorio del programa.
 
-> **¡Atención!**  
+> ⚠️ **Atención:**  
 > Para garantizar un acceso estable a las unidades de red, deben declararse como confiables. Para más información, contacte a su administrador de sistema.
 
 - **Permisos de instalación:**  
@@ -24,7 +24,7 @@ Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar c
 
 ## 2. Ajustes del antivirus y firewall
 
-> **¡Atención!**  
+> ⚠️ **Atención:**  
 > La evaluación de riesgos de las configuraciones y excepciones aquí mencionadas sigue siendo su responsabilidad o la responsabilidad de su proveedor de servicios de TI.
 
 - Asegurarse de que no bloqueen la instalación o conexión de la app.

@@ -3,18 +3,19 @@ site_name: Endades Support
 
 theme:
   name: readthedocs
-  # logo: img/endades.png
   highlightjs: true
+  # logo: img/endades.png
+  # favicon: images/Time2_16x16.png
+  
 
-
-# Change font style
+### Change font style ###
 extra_css:
   - stylesheets/custom.css
 
 #extra_javascript:
 #  - assets/javascripts/search-highlight.js
 
-# Hide logos and copy rights
+### Hide logos and copy rights ###
 extra:
   hide:
     github: true
@@ -22,6 +23,7 @@ extra:
 
 copyright: " "
 
+### Menu navegacion ###
 nav:
   - Inicio: index.md
   - Requisitos del sistema: Requisitos_Sistema.md
