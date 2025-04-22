@@ -23,7 +23,7 @@
 .wy-menu-vertical li.toctree-l1 > a:hover,
 .wy-menu-vertical li.toctree-l2 > a:hover,
 .wy-menu-vertical li.toctree-l3 > a:hover {
-    color: #0098da; 
+    color: #00c39e; 
 }
 
 
@@ -67,7 +67,7 @@ footer {
 .wy-side-nav-search > a {
     pointer-events: none;
     cursor: default;
-    background-image: url("../Imagenes/endades2.png");
+    background-image: url("../images/endades2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200px 35px;
