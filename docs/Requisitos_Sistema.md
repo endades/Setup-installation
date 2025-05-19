@@ -2,7 +2,7 @@
 
 ## 1. Requisitos de instalación del cliente
 
-La instalación del cliente es una instalación local en un ordenador.
+La instalación del cliente (servidor) es una instalación local en un ordenador.
 
 ---
 
@@ -81,6 +81,10 @@ Para ello, se instala un software de virtualización en un servidor anfitrión, 
 - Windows Server 2019  
 - Windows Server 2022  
 - .NET Framework versión 4.8  
+
+#### Requisitos en PC
+
+- Se necesita cumplir los siguientes requisitos en PC [Requisitos de instalación del cliente](#1-requisitos-de-instalacion-del-cliente)
 
 #### Discos duros
 
