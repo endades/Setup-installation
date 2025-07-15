@@ -141,7 +141,7 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
    ![Elegir base de datos](images/Instal_config/elegir_bdd.jpg)
 
-2. En la ventana de **enCONNECT**, en el campo **Servidor**, selecciona la instancia creada, por ejemplo: **`servidor\ENDADES2022`**.
+2. En la ventana de **Seleccionar base de datos**, en el campo **Servidor**, selecciona la instancia creada, por ejemplo: **`servidor\ENDADES2022`**.
 
    ![Servidor](images/Instal_config/servidor.jpg)
 

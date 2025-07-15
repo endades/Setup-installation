@@ -28,5 +28,5 @@ nav:
   - Inicio: index.md
   - Requisitos del sistema: Requisitos_Sistema.md
   - Configuración del sistema: Configuracion_Sistema.md
-  - Requisitos entorno ENBLAU: Configuracion_ENBLAU.md
+  - Requisitos del Entorno ENBLAU: Requisitos_ENBLAU.md
 
