@@ -65,11 +65,77 @@ Es necesario instalar SQL Server para poder crear la instancia del servidor. Hay
 
 ### 3.2. Instalación manual 
 
-1. Acceder desde windows explorer a la ruta ejemplo: **`C:\ENBLAU\Datos`** de instalación de ENBLAU donde se encuentra el ejecutable **SQLEXPR_x64_ENU.exe**.
+1. Acceder desde windows explorer a la ruta ejemplo: **`C:\ENBLAU\Datos`** de instalación de ENBLAU donde se encuentra el ejecutable **SQLEXPR_x64_ENU.exe**. O desde la web https://www.microsoft.com/es-es/download/details.aspx?id=104781 para descargar el ejecutable.
 
      ![Sql Server](images/Instal_config/sql_exe.jpg)
 
-2. Ejecutar el el fichero .exe.
+2. Ejecutar el fichero SQLEXPR_x64_ENU.exe. Y seguir los pasos de instalación de Sql server.
 
+     ![Sql Server](images/Instal_config/sql_server2.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server3.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server4.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server5.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server6.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server7.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server8.jpg)
+
+     > Añadir el nombre de la instancia **ENDADES2022**.
+
+     ![Sql Server](images/Instal_config/sql_server9.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server10.jpg)
+
+     > Introducir la contraseña **Endades$0** para el usuario administrador del SQL server (sa).
+
+     ![Sql Server](images/Instal_config/sql_server11.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server12.jpg)
+
+     ![Sql Server](images/Instal_config/sql_server13.jpg)
+
+---
+
+## 4. Instalación SQL Server Management Studio
+
+Se recomienda que en el servidor (entorno donde se haya instalado ENBLAU y SQL Server) se instale el SQL Server Management Studio versión 20.
+
+1. Desde ese enlace https://learn.microsoft.com/en-us/ssms/release-notes-20 bajar la versión **SQL Server Management Studio 20**.
+
+     ![SQL Server Management Studio](images/Instal_config/ssms.jpg)
+
+2. Seguir las instrucciones de Microsoft desde ese enlace https://learn.microsoft.com/es-es/ssms/install/install para su instalación. 
+
+---
+
+## 5. Creación base de datos ENBLAU
+
+### 5.1. Ejecutando .bat
+
+1. Acceder desde windows explorer a la ruta ejemplo: **`C:\ENBLAU\Datos`** de instalación de ENBLAU donde se encuentra el fichero **01 - CreaciónDB.bat**.
+
+2. Ejecutar el fichero **01 - CreaciónDB.bat** (asegurarse que tienes permiso de administrador en el entorno que se está ejecutando). Al ejecutarlo se cargará dos scripts sql **CreateDB.sql** y **Structure.sql** que se encuentra en la ruta **`C:\ENBLAU\Datos\Scripts`**.
+
+3. Una vez ejecutado los .bat se creará una base de datos llamada **Easywork** en la instancia **`servidor\ENDADES2022`**. Esa base de datos será la que se usara para trabajar con ENBLAU.
+
+
+## 6. Elegir base de datos en ENBLAU
+
+1. Al abrir la primera vez ENBLAU te pedirá que elijas una base de datos, click en aceptar.
+
+     ![Elegir base de datos](images/Instal_config/elegir_bdd.jpg)
+
+2. En la ventana de enCONNECT en el campo **Servidor** desplegar el listado para elegir primero el servidor (es nombre del servidor/entorno que has creado la instancia) ejemplo: **`servidor\ENDADES2022`**.
+
+     ![Servidor](images/Instal_config/servidor.jpg)
+
+3. Luego para escoger la base de datos clicar sobre el botón **Cargar Base de datos**. Luego desplegá el campo de **Base de datos** y elegir del listado la base de datos Easywork.
+
+     ![Servidor](images/Instal_config/bdd.jpg)
 ---
 
