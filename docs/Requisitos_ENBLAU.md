@@ -1,6 +1,6 @@
-# Requisitos del Entorno ENBLAU
+# Requisitos del entorno ENBLAU
 
-## 1. Requisitos para la Configuración de la App ENBLAU
+## 1. Requisitos para la configuración de la App ENBLAU
 
 Antes de proceder con la instalación y configuración de ENBLAU, es necesario realizar algunas configuraciones previas en el entorno donde se va a instalar la aplicación.
 
@@ -40,11 +40,11 @@ Antes de proceder con la instalación y configuración de ENBLAU, es necesario r
 
 ---
 
-## 3. Instalación y Creación de la Instancia de SQL Server
+## 3. Instalación y creación de la instancia de SQL Server
 
 Para poder utilizar ENBLAU es necesario instalar SQL Server y crear una instancia. Esto se puede hacer automáticamente con un archivo `.bat` o manualmente.
 
-### 3.1. Instalación Automática con `.bat`
+### 3.1. Instalación automática con `.bat`
 
 1. Accede desde el explorador de Windows a la ruta de instalación de ENBLAU, por ejemplo: **`C:\ENBLAU\Datos`**, y localiza el archivo **`00 - InstalaciónSQL.bat`**.
 
@@ -59,7 +59,7 @@ Para poder utilizar ENBLAU es necesario instalar SQL Server y crear una instanci
 
    ![Sql Server](images/Instal_config/sql_server.jpg)
 
-### 3.2. Instalación Manual
+### 3.2. Instalación manual
 
 1. Accede a la ruta **`C:\ENBLAU\Datos`** y localiza el ejecutable **`SQLEXPR_x64_ENU.exe`**. Alternativamente, puedes descargarlo desde:  
    [https://www.microsoft.com/es-es/download/details.aspx?id=104781](https://www.microsoft.com/es-es/download/details.aspx?id=104781)
@@ -103,7 +103,7 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
 ---
 
-## 5. Creación de la Base de Datos ENBLAU
+## 5. Creación de la base de datos ENBLAU
 
 ### 5.1. Crear mediante `.bat`
 
@@ -135,7 +135,7 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
 ---
 
-## 6. Selección de la Base de Datos en ENBLAU
+## 6. Selección de la base de datos en ENBLAU
 
 1. Al abrir ENBLAU por primera vez, se solicitará seleccionar una base de datos. Haz clic en **Aceptar**.
 
@@ -145,6 +145,6 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
    ![Servidor](images/Instal_config/servidor.jpg)
 
-3. Haz clic en **Cargar Base de Datos**, despliega el campo correspondiente y selecciona **Easywork** de la lista.
+3. Haz clic en **Cargar base de datos**, despliega el campo correspondiente y selecciona **Easywork** de la lista.
 
    ![Base de datos](images/Instal_config/bdd.jpg)
