@@ -141,10 +141,11 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
    ![Elegir base de datos](images/Instal_config/elegir_bdd.jpg)
 
-2. En la ventana de **Seleccionar base de datos**, en el campo **Servidor**, selecciona la instancia creada, por ejemplo: **`servidor\ENDADES2022`**.
+2. En la ventana de **enCONNECT**(app que se abre para **Seleccionar base de datos**), en el campo **Servidor**, selecciona la instancia creada, por ejemplo: **`servidor\ENDADES2022`**.
 
    ![Servidor](images/Instal_config/servidor.jpg)
 
 3. Haz clic en **Cargar base de datos**, despliega el campo correspondiente y selecciona **Easywork** de la lista.
 
    ![Base de datos](images/Instal_config/bdd.jpg)
+
