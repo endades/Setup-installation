@@ -50,7 +50,7 @@ Para poder utilizar ENBLAU es necesario instalar SQL Server y crear una instanci
 
    ![Install sql](images/Instal_config/install_sql.jpg)
 
-2. Ejecuta el archivo **`00 - InstalaciónSQL.bat`** como administrador. Esto instalará **SQL Server 2022** y creará la instancia **ENDADES2022**.
+2. Ejecuta el archivo **`00 - InstalaciónSQL.bat`** como usuario administrador. Esto instalará **SQL Server 2022** y creará la instancia **ENDADES2022**.
 
    ![Sql Server](images/Instal_config/install_sql2.jpg)  
    ![Sql Server](images/Instal_config/install_sql3.jpg)
@@ -58,6 +58,8 @@ Para poder utilizar ENBLAU es necesario instalar SQL Server y crear una instanci
 3. Verifica que la instancia se haya creado correctamente desde **SQL Server Configuration Manager**:
 
    ![Sql Server](images/Instal_config/sql_server.jpg)
+
+> **Nota:** Si no puedes ejecutar el archivo `.bat` a pesar de tener permisos de administrador, es posible que esté siendo bloqueado por el antivirus o que el cortafuegos (firewall) esté impidiendo alguna de las conexiones que el script intenta realizar. Verifica si el antivirus ha puesto el archivo en cuarentena o si el firewall está restringiendo el acceso a la red o a recursos específicos. 
 
 ### 3.2. Instalación manual
 
@@ -111,9 +113,11 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
    ![Ruta base de datos](images/Instal_config/ruta_bdd.jpg)
 
-2. Ejecuta el archivo como administrador. Este ejecutará los scripts **`CreateDB.sql`** y **`Structure.sql`** ubicados en **`C:\ENBLAU\Datos\Scripts`**.
+2. Ejecuta el archivo como usuario administrador. Este ejecutará los scripts **`CreateDB.sql`** y **`Structure.sql`** ubicados en **`C:\ENBLAU\Datos\Scripts`**.
 
 3. Una vez completado, se creará una base de datos llamada **Easywork** en la instancia **`servidor\ENDADES2022`**, la cual será utilizada por ENBLAU.
+
+> **Nota:** Si no puedes ejecutar el archivo `.bat` a pesar de tener permisos de administrador, es posible que esté siendo bloqueado por el antivirus o que el cortafuegos (firewall) esté impidiendo alguna de las conexiones que el script intenta realizar. Verifica si el antivirus ha puesto el archivo en cuarentena o si el firewall está restringiendo el acceso a la red o a recursos específicos.
 
 ### 5.2. Creación Manual
 
