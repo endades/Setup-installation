@@ -74,6 +74,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">Requisitos del Entorno ENBLAU</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Posibles errores</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -101,14 +105,27 @@
 <h2 id="1-redes-compartidas-y-ajustes-de-red">1. Redes compartidas y ajustes de red</h2>
 <p>El servidor proporciona el programa a los clientes mediante el uso compartido de red.</p>
 <h3 id="11-requisitos-para-usuarios-de-windows">1.1. Requisitos para usuarios de Windows</h3>
-<p>Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar cambios en:</p>
+<p>Para un funcionamiento correcto del programa en entornos Windows, los usuarios deben contar con los siguientes permisos y configuraciones:</p>
 <ul>
-<li>La unidad de red donde esté compartida la carpeta de <strong>Enblau</strong>.</li>
-<li>Las unidades de red del programa deben contener una <strong>letra de unidad</strong>. No basta con asignar un directorio sin una letra de unidad.</li>
-<li>No es posible utilizar la aplicación del programa a través de una **</li>
-<li>Cada archivo y carpeta en el directorio del programa.</li>
+<li><strong>Permisos necesarios</strong>: Se requiere acceso de lectura, escritura y modificación en:</li>
+<li>La unidad de red donde se encuentre la carpeta compartida de <strong>Enblau</strong>.</li>
+<li>
+<p>Todos los archivos y subcarpetas dentro del directorio del programa.</p>
+</li>
+<li>
+<p><strong>Asignación de unidad</strong>:</p>
+</li>
+<li>Las carpetas de red utilizadas por el programa deben estar asignadas a una <strong>letra de unidad</strong> (por ejemplo, <code>Z:\Enblau</code>).  </li>
+<li>
+<p>No es suficiente conectar el recurso compartido mediante una ruta UNC (como <code>\\servidor\Enblau</code>); debe asignarse una letra.</p>
+</li>
+<li>
+<p><strong>Limitaciones</strong>:</p>
+</li>
+<li>No es posible ejecutar la aplicación correctamente sin asignar una letra de unidad.</li>
 </ul>
 <blockquote>
+<p><strong>Nota:</strong> Para información más detallada ir a <a href="https://documentation.endades.com/Utilidades/6.UT_Unidad_Red/">Conectar unidad de red</a></p>
 <p>⚠️ <strong>Atención:</strong><br />
 Para garantizar un acceso estable a las unidades de red, deben declararse como confiables. Para más información, contacte a su administrador de sistema.</p>
 </blockquote>
