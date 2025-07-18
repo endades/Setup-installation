@@ -7,12 +7,20 @@ El servidor proporciona el programa a los clientes mediante el uso compartido de
 
 ### 1.1. Requisitos para usuarios de Windows
 
-Los usuarios de Windows necesitarán permisos de lectura, escritura y realizar cambios en:
+Para un funcionamiento correcto del programa en entornos Windows, los usuarios deben contar con los siguientes permisos y configuraciones:
 
-- La unidad de red donde esté compartida la carpeta de **Enblau**.
-- Las unidades de red del programa deben contener una **letra de unidad**. No basta con asignar un directorio sin una letra de unidad.
-- No es posible utilizar la aplicación del programa a través de una **
-- Cada archivo y carpeta en el directorio del programa.
+- **Permisos necesarios**: Se requiere acceso de lectura, escritura y modificación en:
+  - La unidad de red donde se encuentre la carpeta compartida de **Enblau**.
+  - Todos los archivos y subcarpetas dentro del directorio del programa.
+
+- **Asignación de unidad**:
+  - Las carpetas de red utilizadas por el programa deben estar asignadas a una **letra de unidad** (por ejemplo, `Z:\Enblau`).  
+  - No es suficiente conectar el recurso compartido mediante una ruta UNC (como `\\servidor\Enblau`); debe asignarse una letra.
+
+- **Limitaciones**:
+  - No es posible ejecutar la aplicación correctamente sin asignar una letra de unidad.
+
+> **Nota:** Para información más detallada ir a [Conectar unidad de red](https://documentation.endades.com/Utilidades/6.UT_Unidad_Red/)
 
 > ⚠️ **Atención:**  
 > Para garantizar un acceso estable a las unidades de red, deben declararse como confiables. Para más información, contacte a su administrador de sistema.

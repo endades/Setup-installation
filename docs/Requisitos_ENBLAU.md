@@ -153,3 +153,12 @@ Se recomienda instalar **SQL Server Management Studio 20** en el entorno donde s
 
    ![Base de datos](images/Instal_config/bdd.jpg)
 
+---
+
+## 7. Conexión a unidad de red
+
+Para conectarse a ENBLAU desde un equipo con Windows, es necesario configurar correctamente la conexión a la unidad de red.  
+Este paso es fundamental para que el programa funcione adecuadamente.
+
+Consulta la guía detallada en el siguiente enlace:  
+🔗 [Conectar unidad de red](https://documentation.endades.com/Utilidades/6.UT_Unidad_Red/)
