@@ -4,15 +4,27 @@
 
 ### 1.1. Error de conexión al servidor y base de datos
 
-- **Descripción del error:**  
+**Descripción del error:**  
   Al intentar seleccionar la base de datos en **ENBLAU**, aparece un mensaje de error cuando no se encuentra el servidor o la instancia.  
   Este problema puede deberse a bloqueos por parte del **antivirus** o **firewall** en el servidor donde se ejecuta ENBLAU.
 
   ![Error base de datos](images/Erros/error_bdd.jpg)
 
-- **Solución:**  
-  Revisar las reglas y excepciones del antivirus o firewall en el servidor.  
-  Para más detalles, consulta la sección **2. Ajustes del antivirus y firewall** en la guía de [Configuración del Sistema](Configuracion_Sistema.md).
+**Solución:**  
+  Revisar las reglas y excepciones del antivirus o firewall en el servidor. Ejemplo:
+
+  1. Desde el Firewall Configuración avanzada - **Reglas de entrada** verificar que los puertos **1433 TCP** y **1434 UDP** estén habilitados:
+
+    ![Error base de datos](images/Erros/error_bdd2.jpg)
+
+  2. Desde **Sql Server Configuration Manager** verificar si la instancia **ENDADES2022** tiene el TCP/IP habilitado:
+
+    ![Error base de datos](images/Erros/error_bdd3.jpg)
+
+    
+  > **Nota:** Para más detalles, consulta la sección **2. Ajustes del antivirus y firewall** en la guía de [Configuración del Sistema](Configuracion_Sistema.md).
+
+  Una vez revisado acceder a **enCONNECT** y seleccionar el servidor y la base de datos
 
 ---
 
