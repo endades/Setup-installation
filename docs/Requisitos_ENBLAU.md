@@ -162,3 +162,11 @@ Este paso es fundamental para que el programa funcione adecuadamente.
 
 Consulta la guía detallada en el siguiente enlace:  
 🔗 [Conectar unidad de red](https://documentation.endades.com/Utilidades/6.UT_Unidad_Red/)
+
+---
+
+> **Nota:** Para más información sobre [Posibles errores](Posibles_Errores.md)
+
+---
+
+> ⚠️ **Importante**: A partir del año **2026**, será obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con futuras versiones de ENBLAU y enSITE.
