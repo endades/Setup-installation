@@ -85,8 +85,13 @@
 
   3. **Verificar configuración de puertos:**  
     Asegúrate de que los **puertos utilizados por SQL Server estén habilitados**, incluyendo:
+    - **1433/TCP** (puerto estándar de SQL Server)  
+      - Configurar en **SQL Server Configuration Manager**:  
+        - Ir a **SQL Server Network Configuration → Protocols for ENDADES2022**.  
+        - En **Propiedades de TCP/IP → IP Addresses**, verificar que los **TCP Port** estén configurados en **1433**.
 
-      - **1433 TCP** (puerto estándar de SQL Server)
+          ![Error enSITE](images/Erros/error_ensite3.jpg)
+
       - **1434 UDP** (para descubrimiento de instancia)
       - Otros puertos personalizados que pueden estar siendo utilizados por enSITE, por ejemplo: **TCP-57073**
 
