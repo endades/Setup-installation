@@ -84,9 +84,8 @@
     Añade reglas o excepciones si es necesario.
 
   3. **Verificar configuración de puertos:**  
-    Asegúrate de que los **puertos utilizados por SQL Server estén habilitados**, incluyendo:
-    - **1433/TCP** (puerto estándar de SQL Server)  
-      - Desde el servidor verificar y configurar en **SQL Server Configuration Manager**:  
+    Desde el servidor asegúrate de que los **puertos utilizados por SQL Server estén habilitados**, incluyendo:
+    - **1433/TCP** (puerto estándar de SQL Server). Verificar y configurar en **SQL Server Configuration Manager**:  
         - Ir a **SQL Server Network Configuration → Protocols for ENDADES2022**.  
         - En **Propiedades de TCP/IP → IP Addresses**, verificar que los **TCP Port** estén configurados en **1433**.
 
