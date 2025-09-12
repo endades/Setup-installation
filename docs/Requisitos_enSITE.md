@@ -42,4 +42,4 @@ Antes de proceder con la instalación y configuración de enSITE, es necesario r
 
 ---
 
-> ⚠️ **Importante**: A partir del año **2026**, será obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con futuras versiones de ENBLAU y enSITE.
+> ⚠️ **Importante**: Es obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con futuras versiones de ENBLAU y enSITE.

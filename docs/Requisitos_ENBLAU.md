@@ -169,4 +169,4 @@ Consulta la guía detallada en el siguiente enlace:
 
 ---
 
-> ⚠️ **Importante**: A partir del año **2026**, será obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con futuras versiones de ENBLAU y enSITE.
+> ⚠️ **Importante**: Es obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con futuras versiones de ENBLAU y enSITE.
