@@ -100,3 +100,6 @@
 
 **Nota:** Este error es común cuando hay conflictos en la configuración de red o seguridad. Validar todos los puntos anteriores suele resolver el problema.
 
+---
+
+> ⚠️ **Importante**: Es obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con las versiones de ENBLAU y enSITE.
