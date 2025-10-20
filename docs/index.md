@@ -9,7 +9,7 @@
 
 ---
 
-# ¿Para qué sirve el documento de requisitos y configuraciones del sistema?
+# ¿Para qué sirve el documento de requisitos y configuraciones del sistema? TEST
 
 Este documento tiene como objetivo **informar a los usuarios o técnicos** sobre las condiciones mínimas y recomendadas que debe cumplir un PC para que la aplicación funcione correctamente.
 
