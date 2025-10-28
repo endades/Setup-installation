@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git
-          pip install mkdocs
+          pip install mkdocs mkdocs-i18n  
 
       - name: Configurar Git
         run: |

@@ -58,8 +58,8 @@ theme:
 extra_css:
   - stylesheets/custom.css
 
-extra_javascript:
-  - js/lang-switcher.jss
+# extra_javascript:
+#   - js/lang-switcher.js
 
 ### Hide logos and copy rights ###
 extra:
