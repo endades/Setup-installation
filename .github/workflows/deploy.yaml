@@ -3,15 +3,14 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main  # Ejecutar cuando se haga push a main
+      - main
 
 permissions:
-  contents: write  # Permite subir a gh-pages
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
@@ -21,22 +20,24 @@ jobs:
         with:
           python-version: '3.x'
 
-      # - name: Instalar MkDocs y dependencias
-      #   run: |
-      #     pip install mkdocs mkdocs-material
-
-      
-      - name: Instalar Git y MkDocs
+      - name: Instalar dependencias
         run: |
-          sudo apt-get update
-          sudo apt-get install -y git
-          pip install mkdocs
+          pip install mkdocs mkdocs-material mkdocs-i18n
+
+      - name: Verificar estructura
+        run: |
+          ls -la
+          if [ -f "mkdocs.yml" ]; then
+            echo "mkdocs.yml encontrado"
+          else
+            echo "ERROR: mkdocs.yml no encontrado"
+            exit 1
+          fi
 
       - name: Configurar Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-
-      - name: Generar y desplegar en GitHub Pages
+      - name: Generar y desplegar
         run: mkdocs gh-deploy --force
