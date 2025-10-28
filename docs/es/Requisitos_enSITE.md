@@ -14,7 +14,7 @@ Antes de proceder con la instalación y configuración de enSITE, es necesario r
 
 1. Desde una tablet o movil con conexion wifi acceder a playstore/ apple store buscar y bajar la app enSITE.
 
-    ![enSITE](images/Instal_config/ensite.jpg)
+    ![enSITE](../images/Instal_config/ensite.jpg)
 
 2. Abrir enSITE y añadir esas informaciones:
 
@@ -28,13 +28,13 @@ Antes de proceder con la instalación y configuración de enSITE, es necesario r
 
     - Contraseña - **Endades$0**
 
-    ![enSITE](images/Instal_config/ensite1.jpg)
+    ![enSITE](../images/Instal_config/ensite1.jpg)
 
    - Login **usuario** y **contraseña** (el mismo que se utiliza en ENBLAU)
 
-    ![enSITE](images/Instal_config/ensite2.jpg)
+    ![enSITE](../images/Instal_config/ensite2.jpg)
 
-    ![enSITE](images/Instal_config/ensite3.jpg)
+    ![enSITE](../images/Instal_config/ensite3.jpg)
 
 ---
 

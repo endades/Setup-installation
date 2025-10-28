@@ -78,5 +78,19 @@ footer {
   }
 
 
+/* Contenedor del selector de idioma */
+.lang-switcher {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
   
   
