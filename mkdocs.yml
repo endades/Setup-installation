@@ -32,7 +32,7 @@ plugins:
           name: Italiano
           build: true
           nav:
-            - Home: index.md
+            - Inizio: index.md
             - Requisiti di sistema: Requisitos_Sistema.md
             - Configurazione del sistema: Configuracion_Sistema.md
             - Requisiti dell'ambiente ENBLAU: Requisitos_ENBLAU.md
@@ -42,7 +42,7 @@ plugins:
           name: Português
           build: true
           nav:
-            - Home: index.md
+            - Início: index.md
             - Requisitos do sistema: Requisitos_Sistema.md
             - Configuração do sistema: Configuracion_Sistema.md
             - Requisitos do ambiente ENBLAU: Requisitos_ENBLAU.md
