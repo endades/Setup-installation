@@ -3,7 +3,7 @@
 
 <div style="display: flex; justify-content: center;">
   <a href="https://endades.com/">
-    <img src="images/endades.png" alt="Endades" width="450" />
+    <img src="../images/endades.png" alt="Endades" width="450" />
   </a>
 </div>
 
