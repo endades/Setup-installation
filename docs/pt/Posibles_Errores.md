@@ -62,7 +62,25 @@
 
 ---
 
-### 1.4. Erro de conexão ao servidor a partir do enSITE
+### 1.4. Erro de acesso à fábrica Logikal
+
+**Descrição do erro:**  
+  Ao tentar ligar-se à fábrica (Logikal), é apresentado um erro de acesso no caminho da pasta onde o Logikal está a ser executado.
+
+  ![Erro ERP Logikal](../images/Erros/error_ruta.jpg)
+
+**Solução:**  
+  Para estabelecer a ligação com a fábrica, é necessário definir a pasta como confiável. Para isso, no Windows aceder a **Rede e Internet > Opções da Internet**:
+
+  ![Erro ERP Logikal](../images/Erros/error_ruta2.jpg)
+
+  Em seguida, em **Propriedades da Internet**, ir ao separador **Segurança > Intranet local > Sites > Opções avançadas** e adicionar estes 2 sites web **file://servidor** e **servidor**.
+
+  ![Erro ERP Logikal](../images/Erros/error_ruta3.jpg)
+
+---
+
+### 1.5. Erro de ligação ao servidor a partir do enSITE
 
 - **Descrição do erro:**  
   Ao tentar conectar-se ao servidor a partir do aplicativo **enSITE** (tablet), aparece uma mensagem de erro relacionada à conexão com o servidor SQL.

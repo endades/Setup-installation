@@ -62,7 +62,25 @@
 
 ---
 
-### 1.4. Server Connection Error from enSITE
+### 1.4. Logikal factory access error
+
+**Error description:**  
+  When attempting to connect to the factory (Logikal), an access error is displayed on the folder path where Logikal is being executed.
+
+  ![Logikal ERP Error](../images/Erros/error_ruta.jpg)
+
+**Solution:**  
+  To establish the connection with the factory, the folder must be set as trusted. To do this, in Windows go to **Network and Internet > Internet Options**:
+
+  ![Logikal ERP Error](../images/Erros/error_ruta2.jpg)
+
+  Then, in **Internet Properties**, go to the **Security > Local intranet > Sites > Advanced** tab and add these 2 websites **file://server** and **server**.
+
+  ![Logikal ERP Error](../images/Erros/error_ruta3.jpg)
+
+---
+
+### 1.5. Server connection error from enSITE
 
 - **Error Description:**  
   When trying to connect to the server from the **enSITE** (tablet) application, an error message appears related to the SQL Server connection.

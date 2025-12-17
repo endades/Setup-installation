@@ -62,7 +62,25 @@
 
 ---
 
-### 1.4. Errore di connessione al server da enSITE
+### 1.4. Errore di accesso alla fabbrica Logikal
+
+**Descrizione dell'errore:**  
+  Quando si tenta di connettersi alla fabbrica (Logikal), viene visualizzato un errore di accesso nel percorso della cartella da cui Logikal viene eseguito.
+
+  ![Errore ERP Logikal](../images/Erros/error_ruta.jpg)
+
+**Soluzione:**  
+  Per stabilire la connessione con la fabbrica, è necessario impostare la cartella come attendibile. Per farlo, in Windows andare su **Rete e Internet > Opzioni Internet**:
+
+  ![Errore ERP Logikal](../images/Erros/error_ruta2.jpg)
+
+  Successivamente, in **Proprietà Internet**, andare alla scheda **Sicurezza > Intranet locale > Siti > Opzioni avanzate** e aggiungere questi 2 siti web **file://server** e **server**.
+
+  ![Errore ERP Logikal](../images/Erros/error_ruta3.jpg)
+
+---
+
+### 1.5. Errore di connessione al server da enSITE
 
 - **Descrizione dell’errore:**  
   Durante la connessione al server dall’applicazione **enSITE** (tablet), appare un messaggio di errore relativo alla connessione con il server SQL.
