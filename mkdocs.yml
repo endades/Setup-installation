@@ -14,8 +14,9 @@ plugins:
           nav:
             - Inicio: index.md
             - Requisitos del sistema: Requisitos_Sistema.md
+            - Instalador Endades Suite: Instalador_EndadesSuite.md
             - Configuración del sistema: Configuracion_Sistema.md
-            - Requisitos del Entorno ENBLAU: Requisitos_ENBLAU.md
+            - Requisitos del entorno ENBLAU: Requisitos_ENBLAU.md
             - Requisitos instalación enSITE: Requisitos_enSITE.md
             - Posibles errores: Posibles_Errores.md
         - locale: en
@@ -23,17 +24,19 @@ plugins:
           build: true
           nav:
             - Home: index.md
-            - System Requirements: Requisitos_Sistema.md
-            - System Configuration: Configuracion_Sistema.md
-            - ENBLAU Environment Requirements: Requisitos_ENBLAU.md
-            - enSITE Installation Requirements: Requisitos_enSITE.md
-            - Possible Errors: Posibles_Errores.md
+            - System requirements: Requisitos_Sistema.md
+            - Endades Suite installer: Instalador_EndadesSuite.md
+            - System configuration: Configuracion_Sistema.md
+            - ENBLAU environment requirements: Requisitos_ENBLAU.md
+            - enSITE installation requirements: Requisitos_enSITE.md
+            - Possible errors: Posibles_Errores.md
         - locale: it
           name: Italiano
           build: true
           nav:
             - Inizio: index.md
             - Requisiti di sistema: Requisitos_Sistema.md
+            - Installatore Endades Suite: Instalador_EndadesSuite.md
             - Configurazione del sistema: Configuracion_Sistema.md
             - Requisiti dell'ambiente ENBLAU: Requisitos_ENBLAU.md
             - Requisiti di installazione enSITE: Requisitos_enSITE.md
@@ -44,6 +47,7 @@ plugins:
           nav:
             - Início: index.md
             - Requisitos do sistema: Requisitos_Sistema.md
+            - Instalador Endades Suite: Instalador_EndadesSuite.md
             - Configuração do sistema: Configuracion_Sistema.md
             - Requisitos do ambiente ENBLAU: Requisitos_ENBLAU.md
             - Requisitos de instalação enSITE: Requisitos_enSITE.md

@@ -47,10 +47,10 @@
 
 ---
 
-### 1.3. Error de interfaz con ERP
+### 1.3. Error de interfaz con ERP Logikal
 
 **Descripción del error:**  
-  Al intentar conectarse a fábrica, se muestra un error indicando que no se encuentra una licencia válida para la **interfaz ERP** de Logikal.
+  Al intentar conectarse a fábrica (Logikal), se muestra un error indicando que no se encuentra una licencia válida para la **interfaz ERP** de Logikal.
 
   ![Error ERP Logikal](../images/Erros/error_ERP.jpg)
 
@@ -63,7 +63,25 @@
 
 ---
 
-### 1.4. Error de conexión al servidor desde enSITE
+### 1.4. Error acceso a fábrica Logikal
+
+**Descripción del error:**  
+  Al intentar conectarse a fábrica (Logikal), se muestra un error de acceso en la ruta de la carpeta donde está ejecutando Logikal.
+
+  ![Error ERP Logikal](../images/Erros/error_ruta.jpg)
+
+**Solución:**  
+  Para establecer la conexión con fábrica, es necesario tener la carpeta como de confianza. Para eso, desde Windows en el apartado **Redes e Internet > Opciones de Internet**:
+
+  ![Error ERP Logikal](../images/Erros/error_ruta2.jpg)
+
+  Luego en **Propiedades: Internet** ir a la pestaña de **Seguridad > Intranet local > Sitios > Opciones avanzadas** y añadir esos 2 sitios web **file://servidor** y **servidor**.
+
+  ![Error ERP Logikal](../images/Erros/error_ruta3.jpg)
+
+---
+
+### 1.5. Error de conexión al servidor desde enSITE
 
 - **Descripción del error:**  
   Al intentar conectarse al servidor desde la aplicación **enSITE** (tablet), se muestra un mensaje de error relacionado con la conexión al servidor SQL.
