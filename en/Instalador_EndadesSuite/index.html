@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Endades Suite installer - Endades Support</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Endades Suite installer";
+        var mkdocs_page_input_path = "en/Instalador_EndadesSuite.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../" class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">System requirements</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Endades Suite installer</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-complete-endades-suite-installation">1. Complete Endades Suite Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-run-the-installer">2. Run the Installer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-start-installation">2.1. Start Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-step-by-step-installation-process">2.2. Step-by-Step Installation Process</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#step-1-license-agreement">Step 1: License Agreement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-2-installation-configuration">Step 2: Installation Configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-3-license-configuration">Step 3: License Configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-4-confirm-installation">Step 4: Confirm Installation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-5-installation-progress">Step 5: Installation Progress</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-6-completion">Step 6: Completion</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-database-selection-in-enblau">3. Database Selection in ENBLAU</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-first-run-of-enblau">3.1. First Run of ENBLAU</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-configure-connection-in-enconnect">3.2. Configure Connection in enCONNECT</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">System configuration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">ENBLAU environment requirements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">enSITE installation requirements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Possible errors</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Endades Suite installer</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="endades-suite-installer">Endades Suite Installer</h1>
+<h2 id="1-complete-endades-suite-installation">1. Complete Endades Suite Installation</h2>
+<p>Download the <strong><code>Endades Suite Setup.exe</code></strong> installer from the path provided by ENDADES. Before proceeding with the installation, follow the recommendations in the <a href="../Configuracion_Sistema/">System Configuration</a> section.</p>
+<hr />
+<h2 id="2-run-the-installer">2. Run the Installer</h2>
+<h3 id="21-start-installation">2.1. Start Installation</h3>
+<p>Run the <strong><code>Endades Suite Setup.exe</code></strong> file provided by ENDADES by double-clicking.</p>
+<p><img alt="Installer initial screen" src="../../images/Instalador/instalador_setup.png" /></p>
+<h3 id="22-step-by-step-installation-process">2.2. Step-by-Step Installation Process</h3>
+<p>When starting the installation, the <strong>Endades Suite Installer</strong> window will open. Follow these steps:</p>
+<h4 id="step-1-license-agreement">Step 1: License Agreement</h4>
+<ul>
+<li>Accept the license agreement (EULA) by checking the corresponding box.</li>
+<li>Click <strong>Next</strong>.</li>
+</ul>
+<p><img alt="License agreement" src="../../images/Instalador/instalador_eula.png" /></p>
+<h4 id="step-2-installation-configuration">Step 2: Installation Configuration</h4>
+<ul>
+<li>Specify the path where ENBLAU will be installed.</li>
+<li>Enter the SQL instance name.</li>
+</ul>
+<p><strong>Important:</strong> By default, <strong><code>ENDADES2022</code></strong> appears. If an instance with that name already exists, the installation will show the already created instances in the installation log and will not proceed until you select a different instance name.</p>
+<ul>
+<li>Click <strong>Next</strong>.</li>
+</ul>
+<p><img alt="Path and instance configuration" src="../../images/Instalador/instalador_instalacion.png" /></p>
+<h4 id="step-3-license-configuration">Step 3: License Configuration</h4>
+<ul>
+<li>Enter the username and password provided by ENDADES.</li>
+<li>In the <strong>Available Licenses</strong> section, the active license will appear.</li>
+<li>Select the license and click <strong>Next</strong>.</li>
+</ul>
+<p><img alt="License configuration" src="../../images/Instalador/instalador_licencia.png" /></p>
+<h4 id="step-4-confirm-installation">Step 4: Confirm Installation</h4>
+<ul>
+<li>Review the selected configuration.</li>
+<li>Click <strong>Install</strong> to begin the process.</li>
+</ul>
+<p><img alt="Installation confirmation" src="../../images/Instalador/instalador_instalar.png" /></p>
+<h4 id="step-5-installation-progress">Step 5: Installation Progress</h4>
+<ul>
+<li>The system will install the SQL Server instance and the ENBLAU database.</li>
+<li>This process may take several minutes.</li>
+</ul>
+<p><img alt="Installation progress" src="../../images/Instalador/instalador_instalar2.png" /></p>
+<h4 id="step-6-completion">Step 6: Completion</h4>
+<ul>
+<li>Once completed at 100%, click <strong>Finish</strong>.</li>
+</ul>
+<p><img alt="Installation completed" src="../../images/Instalador/instalador_instalar3.png" /></p>
+<hr />
+<h2 id="3-database-selection-in-enblau">3. Database Selection in ENBLAU</h2>
+<h3 id="31-first-run-of-enblau">3.1. First Run of ENBLAU</h3>
+<p>When opening ENBLAU for the first time, you will be prompted to select a database. Click <strong>Accept</strong>.</p>
+<p><img alt="Initial database selection" src="../../images/Instal_config/elegir_bdd.jpg" /></p>
+<h3 id="32-configure-connection-in-enconnect">3.2. Configure Connection in enCONNECT</h3>
+<ol>
+<li>In the <strong>enCONNECT</strong> window (application for managing connections):</li>
+<li>In the <strong>Server</strong> field, select or type the created instance, for example: <strong><code>server_name\ENDADES2022</code></strong>.</li>
+</ol>
+<p><img alt="Server selection" src="../../images/Instal_config/servidor.jpg" /></p>
+<ol>
+<li>Connect and load databases:</li>
+<li>Click <strong>Load database</strong>.</li>
+<li>Expand the list of available databases.</li>
+<li>Select for example: <strong>ENBLAU</strong> from the list.</li>
+</ol>
+<p><img alt="ENBLAU database selection" src="../../images/Instalador/bdd.png" /></p>
+<hr />
+<blockquote>
+<p><strong>Note:</strong> For more information about problems during installation, consult <a href="../Posibles_Errores/">Possible Errors</a>.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Requisitos_Sistema/" class="btn btn-neutral float-left" title="System requirements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Configuracion_Sistema/" class="btn btn-neutral float-right" title="System configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Requisitos_Sistema/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Configuracion_Sistema/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
