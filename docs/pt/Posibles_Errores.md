@@ -21,9 +21,9 @@
 
   ![Erro banco de dados](../images/Erros/error_bdd3.jpg)
 
-  > **Nota:** Para mais detalhes, consulte a seção **2. Configurações de antivírus e firewall** no guia [Configuração do Sistema](Configuracion_Sistema.md).
+ > ℹ️ **Nota:** Para mais detalhes, consulte a seção **2. Configurações de antivírus e firewall** no guia [Configuração do Sistema](Configuracion_Sistema.md).
 
-  Depois de verificar, acesse **enCONNECT** e selecione o servidor e o banco de dados.
+  Após verificar, acesse **enCONNECT** e selecione o servidor e o banco de dados.
 
 ---
 
@@ -113,7 +113,27 @@
 
 ---
 
-**Nota:** Este erro é comum quando há conflitos nas configurações de rede ou segurança. Validar todos os pontos acima geralmente resolve o problema.
+> ℹ️**Nota:** Este erro é comum quando há conflitos nas configurações de rede ou segurança. Validar todos os pontos acima geralmente resolve o problema.
+
+---
+
+### 1.6. Erro de ficheiro
+
+- **Descrição do erro:**  
+  Este erro ocorre quando o Windows, ocasionalmente, corrompe determinados ficheiros. Pode estar relacionado com a configuração do sistema operativo.
+
+  ![Erro enSITE](../images/Erros/error_archivo.jpg)
+
+---
+
+**Solução:**
+
+  1. **Eliminar a pasta:**  
+     Ao eliminar a pasta indicada no caminho apresentado pelo erro, o problema fica resolvido.
+
+     - Fechar o ENBLAU.
+     - Eliminar a pasta `C:\Users\User_name\AppData\Local\Endades`
+     - Abrir o ENBLAU.
 
 ---
 

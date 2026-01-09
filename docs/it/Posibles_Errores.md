@@ -21,7 +21,7 @@
 
   ![Errore database](../images/Erros/error_bdd3.jpg)
 
-  > **Nota:** Per ulteriori dettagli, consultare la sezione **2. Impostazioni di antivirus e firewall** nella guida [Configurazione del Sistema](Configuracion_Sistema.md).
+  > ℹ️ **Nota:** Per ulteriori dettagli, consultare la sezione **2. Impostazioni di antivirus e firewall** nella guida [Configurazione del Sistema](Configuracion_Sistema.md).
 
   Dopo la verifica, aprire **enCONNECT** e selezionare il server e il database.
 
@@ -113,7 +113,27 @@
 
 ---
 
-**Nota:** Questo errore è comune in caso di conflitti nella configurazione di rete o sicurezza. La verifica dei punti precedenti di solito risolve il problema.
+> ℹ️**Nota:** Questo errore è comune in caso di conflitti nella configurazione di rete o sicurezza. La verifica dei punti precedenti di solito risolve il problema.
+
+---
+
+### 1.6. Errore di file
+
+- **Descrizione dell’errore:**  
+  Questo errore si verifica quando Windows, in alcune occasioni, corrompe determinati file. Potrebbe essere legato alla configurazione del sistema operativo.
+
+  ![Errore enSITE](../images/Erros/error_archivo.jpg)
+
+---
+
+**Soluzione:**
+
+  1. **Eliminare la cartella:**  
+     Eliminando la cartella indicata nel percorso mostrato dall’errore, il problema viene risolto.
+
+     - Chiudere ENBLAU.
+     - Eliminare la cartella `C:\Users\User_name\AppData\Local\Endades`
+     - Aprire ENBLAU.
 
 ---
 
