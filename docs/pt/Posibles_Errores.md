@@ -82,7 +82,7 @@
 
 ### 1.5. Erro de ligação ao servidor a partir do enSITE
 
-- **Descrição do erro:**  
+**Descrição do erro:**  
   Ao tentar conectar-se ao servidor a partir do aplicativo **enSITE** (tablet), aparece uma mensagem de erro relacionada à conexão com o servidor SQL.
 
   ![Erro enSITE](../images/Erros/error_ensite.jpg)

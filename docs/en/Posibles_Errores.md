@@ -82,7 +82,7 @@
 
 ### 1.5. Server connection error from enSITE
 
-- **Error Description:**  
+**Error Description:**  
   When trying to connect to the server from the **enSITE** (tablet) application, an error message appears related to the SQL Server connection.
 
   ![enSITE error](../images/Erros/error_ensite.jpg)
