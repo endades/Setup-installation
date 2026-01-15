@@ -10,7 +10,7 @@ The minimum requirements to install enSITE on a mobile phone or tablet depend on
 
 | Requirement | Android (Play Store) | iOS (App Store) |
 |------------|----------------------|-----------------|
-| **Minimum system version** | Android 15 (API 26); however, it is recommended to use the latest Android versions | iOS 16 (Apple requires new apps and updates to support the latest 3 versions) |
+| **Minimum system version** | Android 15 (API 35); however, it is recommended to use the latest Android versions | iOS 16 (Apple requires new apps and updates to support the latest 3 versions) |
 | **CPU / Architecture** | ARM 64-bit (arm64-v8a); multi-core CPU sufficient for standard apps | All recent iPhones/iPads use ARM 64-bit |
 | **Minimum RAM** | 3 GB minimum | 3 GB minimum; Apple does not explicitly verify this, it depends on iOS version and model |
 | **Free storage** | 200 MB minimum for installation | 200 MB minimum for installation |
