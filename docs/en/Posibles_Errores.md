@@ -137,4 +137,32 @@
 
 ---
 
+### 1.7. License Registration Error
+
+**Error description:**  
+On some occasions, when opening ENBLAU, the system may request the license registration again.
+
+![Registration error](../images/Erros/error_registro.jpg)
+
+The possible causes are as follows:
+
+- ENBLAU is installed on a server and the workstation from which it is executed accesses it through a network drive. The connection may have failed due to changes or updates on the server.
+- The workstation from which ENBLAU is executed is not visible on the network.
+- There are permission issues on the network drive.
+- Issue with the server IP address and name in the Windows *hosts* file.
+
+**Solution:**
+
+1. Verify that the network is working correctly and that there are no connectivity issues.
+
+2. Verify that the server name and its IP address are correctly listed in the Windows *hosts* file.
+
+3. From the server, open **enUPDATE** and synchronize the **License and updates** option. Then, open ENBLAU directly from the server to check that it runs correctly.
+
+   ![Registration error](../images/Erros/error_registro2.jpg)
+
+4. Check that the application license is up to date in terms of payments. The license expires automatically; in that case, contact technical support at **comercial@endades.com**.
+
+---
+
 > ⚠️ **Important:** It is mandatory to use at least **SQL Server 2022** to ensure compatibility with ENBLAU and enSITE versions.

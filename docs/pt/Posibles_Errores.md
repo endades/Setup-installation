@@ -137,4 +137,32 @@
 
 ---
 
+### 1.7. Erro de registo da licença
+
+**Descrição do erro:**  
+Em algumas ocasiões, ao abrir o ENBLAU, o sistema pode solicitar novamente o registo da licença.
+
+![Erro de registo](../images/Erros/error_registro.jpg)
+
+As possíveis causas são as seguintes:
+
+- O ENBLAU está instalado num servidor e o computador a partir do qual é executado acede através de uma unidade de rede. A ligação pode ter falhado devido a alterações ou atualizações no servidor.
+- O computador a partir do qual o ENBLAU é executado não está visível na rede.
+- Existem problemas de permissões na unidade de rede.
+- Problemas com o endereço IP e o nome do servidor no ficheiro *hosts* do Windows.
+
+**Solução:**
+
+1. Verificar se a rede está a funcionar corretamente e se não existem problemas de conectividade.
+
+2. Verificar se o nome do servidor e o respetivo endereço IP estão corretamente indicados no ficheiro *hosts* do Windows.
+
+3. A partir do servidor, abrir o **enUPDATE** e sincronizar a opção **Licença e atualizações**. Em seguida, abrir o ENBLAU diretamente a partir do servidor para verificar se é executado corretamente.
+
+   ![Erro de registo](../images/Erros/error_registro2.jpg)
+
+4. Verificar se a licença da aplicação está em dia relativamente aos pagamentos. A licença expira automaticamente; nesse caso, contactar o suporte técnico através de **comercial@endades.com**.
+
+---
+
 > ⚠️ **Importante:** É obrigatório usar, no mínimo, o **SQL Server 2022** para garantir a compatibilidade com as versões do ENBLAU e do enSITE.
