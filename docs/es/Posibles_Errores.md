@@ -140,4 +140,29 @@
 
 ---
 
+### 1.7. Error de registro de licencia
+
+- **Descripción del error:**  
+  En algunas ocasiones, al abrir ENBLAU, el sistema puede solicitar nuevamente el registro de la licencia.
+
+  ![Error registro](../images/Erros/error_registro.jpg)
+  
+  Las posibles causas son las siguientes:
+
+  - ENBLAU está instalado en un servidor y el equipo desde el que se ejecuta accede mediante una unidad de red. La conexión puede haber fallado debido a cambios o actualizaciones en el servidor.
+  - El equipo desde el que se ejecuta ENBLAU no es visible en la red.
+  - Existen problemas de permisos sobre la unidad de red.
+
+- **Solución:**
+
+  1. Verificar que la red funcione correctamente y que no exista ningún problema de conectividad.
+
+  2. Desde el servidor, abrir **enUPDATE** y sincronizar la opción **Licencia y actualizaciones**. A continuación, abrir ENBLAU directamente desde el servidor para comprobar que se ejecuta correctamente.
+
+    ![Error registro](../images/Erros/error_registro2.jpg)
+
+  3. Comprobar que la licencia de la aplicación esté al día en cuanto a pagos. La licencia caduca de forma automática, en ese caso, contactar con soporte técnico a través de **soporte@endades.com**.
+
+---
+
 > ⚠️ **Importante**: Es obligatorio utilizar como mínimo **SQL Server 2022** para garantizar la compatibilidad con las versiones de ENBLAU y enSITE.
