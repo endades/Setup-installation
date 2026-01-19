@@ -152,13 +152,13 @@
   - ENBLAU está instalado en un servidor y el equipo desde el que se ejecuta accede mediante una unidad de red. La conexión puede haber fallado debido a cambios o actualizaciones en el servidor.
   - El equipo desde el que se ejecuta ENBLAU no es visible en la red.
   - Existen problemas de permisos sobre la unidad de red.
-  - Problema con la ip y nombre del servidor en el archivo *hosts* de Windows.
+  - Problema con la ip y nombre del servidor en la configuracion de red.
 
 **Solución:**
 
-  1. Verificar que la red funcione correctamente y que no exista ningún problema de conectividad.
+  1. Verificar que la red esté correctamente configurada y que no exista ningún problema de conectividad.
 
-  2. Verificar que figuran correctamente el nombre del servidor y su dirección IP en el archivo *hosts* de Windows.
+  2. Solucion para el control de licencia de ENBLAU. Configurar correctamente el nombre del servidor y su dirección IP en el archivo hosts de Windows. Esta solución aplica cuando existe una configuración de red incorrecta.
 
   3. Desde el servidor, abrir **enUPDATE** y sincronizar la opción **Licencia y actualizaciones**. A continuación, abrir ENBLAU directamente desde el servidor para comprobar que se ejecuta correctamente.
 

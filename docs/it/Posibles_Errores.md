@@ -149,13 +149,13 @@ Le possibili cause sono le seguenti:
 - ENBLAU è installato su un server e il computer da cui viene eseguito vi accede tramite un’unità di rete. La connessione potrebbe non essere disponibile a causa di modifiche o aggiornamenti del server.
 - Il computer da cui viene eseguito ENBLAU non è visibile sulla rete.
 - Esistono problemi di autorizzazioni sull’unità di rete.
-- Problemi relativi all’indirizzo IP e al nome del server nel file *hosts* di Windows.
+- Problemi relativi all’indirizzo IP e al nome del server.
 
 **Soluzione:**
 
 1. Verificare che la rete funzioni correttamente e che non vi siano problemi di connettività.
 
-2. Verificare che il nome del server e il relativo indirizzo IP siano correttamente indicati nel file *hosts* di Windows.
+2. Soluzione per il controllo delle licenze di ENBLAU. Configurare correttamente il nome del server e il relativo indirizzo IP nel file hosts di Windows. Questa soluzione si applica in caso di una configurazione di rete errata.
 
 3. Dal server, aprire **enUPDATE** e sincronizzare l’opzione **Licenza e aggiornamenti**. Successivamente, aprire ENBLAU direttamente dal server per verificare che venga eseguito correttamente.
 

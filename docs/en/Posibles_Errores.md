@@ -149,13 +149,13 @@ The possible causes are as follows:
 - ENBLAU is installed on a server and the workstation from which it is executed accesses it through a network drive. The connection may have failed due to changes or updates on the server.
 - The workstation from which ENBLAU is executed is not visible on the network.
 - There are permission issues on the network drive.
-- Issue with the server IP address and name in the Windows *hosts* file.
+- Issue with the server IP address and name with network configuration.
 
 **Solution:**
 
 1. Verify that the network is working correctly and that there are no connectivity issues.
 
-2. Verify that the server name and its IP address are correctly listed in the Windows *hosts* file.
+2. Solution for ENBLAU license control. Correctly configure the server name and its IP address in the Windows hosts file. This solution applies when there is an incorrect network configuration.
 
 3. From the server, open **enUPDATE** and synchronize the **License and updates** option. Then, open ENBLAU directly from the server to check that it runs correctly.
 
