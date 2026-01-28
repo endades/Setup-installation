@@ -43,10 +43,10 @@ Os requisitos mínimos para instalar o enSITE num telemóvel ou tablet dependem 
 2. Abrir o enSITE e introduzir as seguintes informações:
 
     - Código de licença (fornecido pela Endades)
-    - Servidor e instância (os mesmos onde o ENBLAU está instalado no servidor)
+    - IP Servidor (os mesmos onde o ENBLAU está instalado no servidor)
     - Base de dados (a mesma onde o ENBLAU está instalado no servidor)
-    - Utilizador – **sa**
-    - Palavra-passe – **A mesma palavra-passe de ligação à base de dados do ENBLAU**
+    - Utilizador – **sa** (Autenticação SQL Server)
+    - Palavra-passe – **A mesma palavra-passe de ligação à base de dados do ENBLAU** (Autenticação SQL Server)
 
     ![enSITE](../images/Instal_config/ensite1.jpg)
 

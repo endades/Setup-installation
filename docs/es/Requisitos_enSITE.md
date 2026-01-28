@@ -44,13 +44,13 @@ Los requisitos mínimos para instalar enSITE en un móvil o tablet dependen de l
 
     - Código de licencia (proporcionado por Endades)
 
-    - Servidor e instancia (la misma donde tiene instalado ENBLAU en el servidor)
+    - IP Servidor (la misma donde tiene instalado ENBLAU en el servidor)
 
     - Base de datos (la misma donde tiene instalado ENBLAU en el servidor)
 
-    - Usuario - **sa**
+    - Usuario - **sa** (Autenticación SQL serve)
 
-    - Contraseña - **Misma contraseña de conexión de base datos de ENBLAU**
+    - Contraseña - **Misma contraseña de conexión de base datos de ENBLAU** (Autenticación SQL serve)
 
     ![enSITE](../images/Instal_config/ensite1.jpg)
 

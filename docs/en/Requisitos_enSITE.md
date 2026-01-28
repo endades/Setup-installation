@@ -43,10 +43,10 @@ The minimum requirements to install enSITE on a mobile phone or tablet depend on
 2. Open enSITE and enter the following information:
 
     - License code (provided by Endades)
-    - Server and instance (the same where ENBLAU is installed on the server)
+    - IP Server (the same where ENBLAU is installed on the server)
     - Database (the same where ENBLAU is installed on the server)
-    - User – **sa**
-    - Password – **Same database connection password used by ENBLAU**
+    - User – **sa** (SQL Server autentication)
+    - Password – **Same database connection password used by ENBLAU** (SQL Server autentication)
 
     ![enSITE](../images/Instal_config/ensite1.jpg)
 
