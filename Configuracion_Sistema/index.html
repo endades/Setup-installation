@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Configuración del sistema - Endades Support</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configuraci\u00f3n del sistema";
+        var mkdocs_page_input_path = "es/Configuracion_Sistema.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">Requisitos del sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Instalador Endades Suite</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Configuración del sistema</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-redes-compartidas-y-ajustes-de-red">1. Redes compartidas y ajustes de red</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-requisitos-para-usuarios-de-windows">1.1. Requisitos para usuarios de Windows</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-ajustes-del-antivirus-y-firewall">2. Ajustes del antivirus y firewall</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-establecer-la-unidad-de-red-como-segura">2.1. Establecer la unidad de red como segura</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-excepciones-para-el-antivirus">2.2. Excepciones para el antivirus</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-establecer-excepciones-en-el-antivirus-para">2.3. Establecer excepciones en el antivirus para:</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">Requisitos del entorno ENBLAU</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">Requisitos instalación enSITE</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Posibles errores</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Configuración del sistema</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="configuracion-del-sistema">Configuración del sistema</h1>
+<h2 id="1-redes-compartidas-y-ajustes-de-red">1. Redes compartidas y ajustes de red</h2>
+<p>El servidor proporciona el programa a los clientes mediante el uso compartido de red.</p>
+<h3 id="11-requisitos-para-usuarios-de-windows">1.1. Requisitos para usuarios de Windows</h3>
+<p>Para un funcionamiento correcto del programa en entornos Windows, los usuarios deben contar con los siguientes permisos y configuraciones:</p>
+<ul>
+<li><strong>Permisos necesarios</strong>: Se requiere acceso de lectura, escritura y modificación en:</li>
+<li>La unidad de red donde se encuentre la carpeta compartida de <strong>Enblau</strong>.</li>
+<li>
+<p>Todos los archivos y subcarpetas dentro del directorio del programa.</p>
+</li>
+<li>
+<p><strong>Asignación de unidad</strong>:</p>
+</li>
+<li>Las carpetas de red utilizadas por el programa deben estar asignadas a una <strong>letra de unidad</strong> (por ejemplo, <code>Z:\Enblau</code>).  </li>
+<li>
+<p>No es suficiente conectar el recurso compartido mediante una ruta UNC (como <code>\\servidor\Enblau</code>); debe asignarse una letra.</p>
+</li>
+<li>
+<p><strong>Limitaciones</strong>:</p>
+</li>
+<li>No es posible ejecutar la aplicación correctamente sin asignar una letra de unidad.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Para información más detallada ir a <a href="https://documentation.endades.com/Utilidades/6.UT_Unidad_Red/">Conectar unidad de red</a></p>
+<p>⚠️ <strong>Atención:</strong><br />
+Para garantizar un acceso estable a las unidades de red, deben declararse como confiables. Para más información, contacte a su administrador de sistema.</p>
+</blockquote>
+<ul>
+<li><strong>Permisos de instalación:</strong><br />
+  Se requieren permisos de administrador.</li>
+</ul>
+<hr />
+<h2 id="2-ajustes-del-antivirus-y-firewall">2. Ajustes del antivirus y firewall</h2>
+<blockquote>
+<p>⚠️ <strong>Atención:</strong><br />
+La evaluación de riesgos de las configuraciones y excepciones aquí mencionadas sigue siendo su responsabilidad o la responsabilidad de su proveedor de servicios de TI.</p>
+</blockquote>
+<ul>
+<li>Asegurarse de que no bloqueen la instalación o conexión de la app.</li>
+</ul>
+<hr />
+<h3 id="21-establecer-la-unidad-de-red-como-segura">2.1. Establecer la unidad de red como segura</h3>
+<p>Establecer la unidad como «segura» garantiza la estabilidad necesaria del programa en el trabajo diario y optimiza el rendimiento del programa.</p>
+<p>Pasos:</p>
+<ol>
+<li>Mantenga presionada la tecla <strong>Windows</strong> en su teclado y presione la tecla <strong>R</strong>.</li>
+<li>Ingrese <code>inetcpl.cpl</code> en la ventana que aparece.</li>
+<li>Se abrirán las <strong>Opciones de Internet</strong>.</li>
+<li>Seleccione:<br />
+<code>Seguridad</code> &gt; <code>Intranet local</code> &gt; <code>Sitios</code> &gt; <code>Avanzado</code></li>
+<li>Agregue las direcciones de red como:<br />
+<code>\\Dirección_IP</code> y <code>Dirección_IP</code><br />
+   Ejemplo: <code>\\192.168.15.66</code> y <code>192.168.15.66</code></li>
+</ol>
+<hr />
+<h3 id="22-excepciones-para-el-antivirus">2.2. Excepciones para el antivirus</h3>
+<p>Preparar la configuración de excepciones en el software antivirus:</p>
+<ul>
+<li>
+<p><strong>Almacenar los certificados</strong> con los que se firma la solicitud del programa.<br />
+  Los certificados pueden extraerse de archivos <code>*.exe</code>. Algunos antivirus permiten observar el almacén de certificados del sistema operativo.</p>
+</li>
+<li>
+<p><strong>Subir de nivel la confianza</strong> o el grupo de confianza asignado en el software antivirus:</p>
+</li>
+<li>Para los archivos <code>.exe</code>/<code>.dll</code> en el directorio del programa.</li>
+<li>O para el nivel de confianza del certificado de firma de código.</li>
+</ul>
+<hr />
+<h3 id="23-establecer-excepciones-en-el-antivirus-para">2.3. Establecer excepciones en el antivirus para:</h3>
+<ul>
+<li>El <strong>directorio del programa</strong>, por ejemplo, en la unidad de red donde está instalado el programa.<br />
+  Incluye todas las carpetas necesarias hasta llegar al directorio del programa.</li>
+</ul>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Instalador_EndadesSuite/" class="btn btn-neutral float-left" title="Instalador Endades Suite"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Requisitos_ENBLAU/" class="btn btn-neutral float-right" title="Requisitos del entorno ENBLAU">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Instalador_EndadesSuite/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Requisitos_ENBLAU/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Requisiti dell'ambiente ENBLAU - Endades Support</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Requisiti dell\u0027ambiente ENBLAU";
+        var mkdocs_page_input_path = "it/Requisitos_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../" class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">Inizio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">Requisiti di sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Installatore Endades Suite</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">Configurazione del sistema</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requisiti dell'ambiente ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-requisiti-per-la-configurazione-dellapp-enblau">1. Requisiti per la configurazione dell'app ENBLAU</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-antivirus-e-firewall">1.1. Antivirus e Firewall</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-installazione-di-enblau">2. Installazione di ENBLAU</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-installazione-e-creazione-dellistanza-di-sql-server">3. Installazione e creazione dell'istanza di SQL Server</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-installazione-automatica-con-bat">3.1. Installazione automatica con .bat</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-installazione-manuale">3.2. Installazione manuale</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-installazione-di-sql-server-management-studio-ssms">4. Installazione di SQL Server Management Studio (SSMS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-creazione-del-database-enblau">5. Creazione del database ENBLAU</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-creazione-tramite-bat">5.1. Creazione tramite .bat</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-creazione-manuale">5.2. Creazione manuale</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-selezione-del-database-in-enblau">6. Selezione del database in ENBLAU</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-connessione-allunita-di-rete">7. Connessione all’unità di rete</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">Requisiti di installazione enSITE</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Possibili errori</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Requisiti dell'ambiente ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="requisiti-dellambiente-enblau">Requisiti dell'ambiente ENBLAU</h1>
+<h2 id="1-requisiti-per-la-configurazione-dellapp-enblau">1. Requisiti per la configurazione dell'app ENBLAU</h2>
+<p>Prima di procedere con l'installazione e la configurazione di ENBLAU, è necessario effettuare alcune impostazioni preliminari nell'ambiente in cui l'applicazione verrà installata.</p>
+<hr />
+<h3 id="11-antivirus-e-firewall">1.1. Antivirus e Firewall</h3>
+<blockquote>
+<p>Seguire le raccomandazioni riportate nella sezione <strong>2. Impostazioni dell'antivirus e del firewall</strong> in <a href="../Configuracion_Sistema/">Configurazione del Sistema</a>.</p>
+</blockquote>
+<hr />
+<h2 id="2-installazione-di-enblau">2. Installazione di ENBLAU</h2>
+<ol>
+<li>Eseguire l'installer <strong><code>Setup Enblau.msi</code></strong> fornito da ENDADES con un doppio clic.</li>
+</ol>
+<p><img alt="Setup" src="../../images/Instal_config/setup_msi.jpg" /></p>
+<ol>
+<li>All'avvio dell'installazione, si aprirà la finestra di <strong>Endades Suite Setup</strong>. Seguire i passaggi successivi:</li>
+</ol>
+<p><img alt="Setup passo 1" src="../../images/Instal_config/setup.jpg" /></p>
+<ul>
+<li>
+<p>Accettare i termini della licenza selezionando la casella corrispondente.</p>
+<p><img alt="Setup passo 2" src="../../images/Instal_config/setup2.jpg" /></p>
+</li>
+<li>
+<p>Specificare il percorso in cui verrà installato ENBLAU.</p>
+<p><img alt="Setup passo 3" src="../../images/Instal_config/setup3.jpg" /></p>
+</li>
+<li>
+<p>Fare clic su <strong>"Installa"</strong> per avviare l'installazione.</p>
+<p><img alt="Finalizza" src="../../images/Instal_config/install.jpg" /></p>
+</li>
+<li>
+<p>Completare il processo.</p>
+<p><img alt="Finalizza" src="../../images/Instal_config/finish.jpg" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="3-installazione-e-creazione-dellistanza-di-sql-server">3. Installazione e creazione dell'istanza di SQL Server</h2>
+<p>Per poter utilizzare ENBLAU, è necessario installare SQL Server e creare un'istanza. Questo può essere fatto automaticamente con un file <code>.bat</code> o manualmente.</p>
+<h3 id="31-installazione-automatica-con-bat">3.1. Installazione automatica con <code>.bat</code></h3>
+<ol>
+<li>Accedere tramite Esplora Risorse di Windows al percorso di installazione di ENBLAU, ad esempio: <strong><code>C:\ENBLAU\Datos</code></strong>, e individuare il file <strong><code>00 - InstalaciónSQL.bat</code></strong>.</li>
+</ol>
+<p><img alt="Install sql" src="../../images/Instal_config/install_sql.jpg" /></p>
+<ol>
+<li>Eseguire il file <strong><code>00 - InstalaciónSQL.bat</code></strong> come amministratore. Questo installerà <strong>SQL Server 2022</strong> e creerà l'istanza <strong>ENDADES2022</strong>.</li>
+</ol>
+<p><img alt="Sql Server" src="../../images/Instal_config/install_sql2.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/install_sql3.jpg" /></p>
+<ol>
+<li>Verificare che l'istanza sia stata creata correttamente da <strong>SQL Server Configuration Manager</strong>:</li>
+</ol>
+<p><img alt="Sql Server" src="../../images/Instal_config/sql_server.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Se non è possibile eseguire il file <code>.bat</code> pur avendo i permessi di amministratore, potrebbe essere bloccato dall'antivirus o dal firewall che impedisce alcune connessioni necessarie al file script. Verificare se l'antivirus ha messo il file in quarantena o se il firewall limita l'accesso alla rete o a risorse specifiche.</p>
+</blockquote>
+<h3 id="32-installazione-manuale">3.2. Installazione manuale</h3>
+<ol>
+<li>Accedere al percorso <strong><code>C:\ENBLAU\Datos</code></strong> e individuare l'eseguibile <strong><code>SQLEXPR_x64_ENU.exe</code></strong>. In alternativa, è possibile scaricarlo da:<br />
+<a href="https://www.microsoft.com/it-it/download/details.aspx?id=104781">https://www.microsoft.com/it-it/download/details.aspx?id=104781</a></li>
+</ol>
+<p><img alt="Sql Server" src="../../images/Instal_config/sql_exe.jpg" /></p>
+<ol>
+<li>Eseguire l'installer e seguire i passaggi guidati:</li>
+</ol>
+<p><img alt="Sql Server" src="../../images/Instal_config/sql_server2.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server3.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server4.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server5.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server6.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server7.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server8.jpg" /></p>
+<blockquote>
+<p><strong>Nome dell'istanza:</strong> <code>ENDADES2022</code></p>
+</blockquote>
+<p><img alt="Sql Server" src="../../images/Instal_config/sql_server9.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server10.jpg" /></p>
+<blockquote>
+<p><strong>Password utente <code>sa</code>:</strong> <code>Endades$0</code></p>
+</blockquote>
+<p><img alt="Sql Server" src="../../images/Instal_config/sql_server11.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server12.jpg" /><br />
+<img alt="Sql Server" src="../../images/Instal_config/sql_server13.jpg" /></p>
+<hr />
+<h2 id="4-installazione-di-sql-server-management-studio-ssms">4. Installazione di SQL Server Management Studio (SSMS)</h2>
+<p>Si consiglia di installare <strong>SQL Server Management Studio 20</strong> nell'ambiente dove è stato installato ENBLAU e SQL Server.</p>
+<ol>
+<li>Scaricare la versione da:<br />
+<a href="https://learn.microsoft.com/it-it/ssms/release-notes-20">https://learn.microsoft.com/it-it/ssms/release-notes-20</a></li>
+</ol>
+<p><img alt="SQL Server Management Studio" src="../../images/Instal_config/ssms.jpg" /></p>
+<ol>
+<li>Seguire le istruzioni ufficiali di installazione da:<br />
+<a href="https://learn.microsoft.com/it-it/ssms/install/install">https://learn.microsoft.com/it-it/ssms/install/install</a></li>
+</ol>
+<hr />
+<h2 id="5-creazione-del-database-enblau">5. Creazione del database ENBLAU</h2>
+<h3 id="51-creazione-tramite-bat">5.1. Creazione tramite <code>.bat</code></h3>
+<ol>
+<li>Accedere al percorso di installazione di ENBLAU, ad esempio: <strong><code>C:\ENBLAU\Datos</code></strong>, e individuare il file <strong><code>01 - CreaciónDB.bat</code></strong>.</li>
+</ol>
+<p><img alt="Percorso database" src="../../images/Instal_config/ruta_bdd.jpg" /></p>
+<ol>
+<li>
+<p>Eseguire il file come amministratore. Questo eseguirà gli script <strong><code>CreateDB.sql</code></strong> e <strong><code>Structure.sql</code></strong> situati in <strong><code>C:\ENBLAU\Datos\Scripts</code></strong>.</p>
+</li>
+<li>
+<p>Una volta completato, verrà creato un database chiamato <strong>Easywork</strong> nell'istanza <strong><code>server\ENDADES2022</code></strong>, che sarà utilizzato da ENBLAU.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Nota:</strong> Se non è possibile eseguire il file <code>.bat</code> pur avendo i permessi di amministratore, potrebbe essere bloccato dall'antivirus o dal firewall che impedisce alcune connessioni necessarie al file script. Verificare se l'antivirus ha messo il file in quarantena o se il firewall limita l'accesso alla rete o a risorse specifiche.</p>
+</blockquote>
+<h3 id="52-creazione-manuale">5.2. Creazione manuale</h3>
+<ol>
+<li>Accedere al percorso di installazione di ENBLAU, ad esempio: <strong><code>C:\ENBLAU\Datos\Scripts</code></strong>, e individuare gli script <strong><code>CreateDB.sql</code></strong> e <strong><code>Structure.sql</code></strong>.</li>
+</ol>
+<p><img alt="Scripts database" src="../../images/Instal_config/scripts_bdd.jpg" /></p>
+<ol>
+<li>Aprire <strong>SQL Server Management Studio</strong>, connettersi al server corrispondente, ad esempio: <strong><code>server\ENDADES2022</code></strong>. Assicurarsi di usare l’utente <strong>sa</strong> e la password <strong>Endades$0</strong>.</li>
+</ol>
+<p><img alt="Connessione SQL" src="../../images/Instal_config/sql_bdd.jpg" /></p>
+<ol>
+<li>Aprire prima il file <strong><code>CreateDB.sql</code></strong> ed eseguirlo.</li>
+</ol>
+<p><img alt="CreateDB" src="../../images/Instal_config/create_db.jpg" /></p>
+<ol>
+<li>Poi ripetere lo stesso processo con il file <strong><code>Structure.sql</code></strong>.</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>Importante:</strong> Gli script devono essere eseguiti nell'ordine indicato: prima <strong>CreateDB.sql</strong>, poi <strong>Structure.sql</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="6-selezione-del-database-in-enblau">6. Selezione del database in ENBLAU</h2>
+<ol>
+<li>Al primo avvio di ENBLAU, verrà richiesto di selezionare un database. Fare clic su <strong>OK</strong>.</li>
+</ol>
+<p><img alt="Seleziona database" src="../../images/Instal_config/elegir_bdd.jpg" /></p>
+<ol>
+<li>Nella finestra <strong>enCONNECT</strong> (app che si apre per <strong>Seleziona database</strong>), nel campo <strong>Server</strong>, selezionare l'istanza creata, ad esempio: <strong><code>server\ENDADES2022</code></strong>.</li>
+</ol>
+<p><img alt="Server" src="../../images/Instal_config/servidor.jpg" /></p>
+<ol>
+<li>Fare clic su <strong>Carica database</strong>, aprire il campo corrispondente e selezionare <strong>Easywork</strong> dall'elenco.</li>
+</ol>
+<p><img alt="Database" src="../../images/Instal_config/bdd.jpg" /></p>
+<hr />
+<h2 id="7-connessione-allunita-di-rete">7. Connessione all’unità di rete</h2>
+<p>Per collegarsi a ENBLAU da un PC Windows, è necessario configurare correttamente la connessione all’unità di rete.<br />
+Questo passaggio è fondamentale affinché il programma funzioni correttamente.</p>
+<p>Consulta la guida dettagliata al seguente link:<br />
+🔗 <a href="https://documentation.endades.com/it/Utilita/6.UT_Unidad_Red/">Connetti unità di rete</a></p>
+<hr />
+<blockquote>
+<p><strong>Nota:</strong> Per ulteriori informazioni su <a href="../Posibles_Errores/">Possibili errori</a></p>
+</blockquote>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Importante:</strong> È obbligatorio utilizzare almeno <strong>SQL Server 2022</strong> per garantire la compatibilità con le versioni di ENBLAU e enSITE.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Configuracion_Sistema/" class="btn btn-neutral float-left" title="Configurazione del sistema"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Requisitos_enSITE/" class="btn btn-neutral float-right" title="Requisiti di installazione enSITE">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Configuracion_Sistema/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Requisitos_enSITE/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

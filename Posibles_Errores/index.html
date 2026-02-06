@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Posibles errores - Endades Support</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Posibles errores";
+        var mkdocs_page_input_path = "es/Posibles_Errores.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">Requisitos del sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Instalador Endades Suite</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">Configuración del sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">Requisitos del entorno ENBLAU</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">Requisitos instalación enSITE</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Posibles errores</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-errores-y-soluciones">1. Errores y soluciones</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-error-de-conexion-al-servidor-y-base-de-datos">1.1. Error de conexión al servidor y base de datos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-error-de-conexion-a-fabrica">1.2. Error de conexión a fábrica</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-error-de-interfaz-con-erp-logikal">1.3. Error de interfaz con ERP Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14-error-acceso-a-fabrica-logikal">1.4. Error acceso a fábrica Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15-error-de-conexion-al-servidor-desde-ensite">1.5. Error de conexión al servidor desde enSITE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#16-error-de-archivo">1.6. Error de archivo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#17-error-de-registro-de-licencia">1.7. Error de registro de licencia</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Posibles errores</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="posibles-errores">Posibles errores</h1>
+<h2 id="1-errores-y-soluciones">1. Errores y soluciones</h2>
+<h3 id="11-error-de-conexion-al-servidor-y-base-de-datos">1.1. Error de conexión al servidor y base de datos</h3>
+<p><strong>Descripción del error:</strong><br />
+  Al intentar seleccionar la base de datos en <strong>ENBLAU</strong>, aparece un mensaje de error cuando no se encuentra el servidor o la instancia.<br />
+  Este problema puede deberse a bloqueos por parte del <strong>antivirus</strong> o <strong>firewall</strong> en el servidor donde se ejecuta ENBLAU.</p>
+<p><img alt="Error base de datos" src="../images/Erros/error_bdd.jpg" /></p>
+<p><strong>Solución:</strong><br />
+  Revisar las reglas y excepciones del antivirus o firewall en el servidor. Ejemplo:</p>
+<ol>
+<li>Desde el Firewall Configuración avanzada - <strong>Reglas de entrada</strong> verificar que los puertos <strong>1433 TCP</strong> (puerto estándar de SQL Server) y <strong>1434 UDP</strong> (para descubrimiento de instancia) estén habilitados:</li>
+</ol>
+<p><img alt="Error base de datos" src="../images/Erros/error_bdd2.jpg" /></p>
+<ol>
+<li>Desde <strong>Sql Server Configuration Manager</strong> verificar si la instancia <strong>ENDADES2022</strong> tiene el TCP/IP habilitado:</li>
+</ol>
+<p><img alt="Error base de datos" src="../images/Erros/error_bdd3.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Para más detalles, consulta la sección <strong>2. Ajustes del antivirus y firewall</strong> en la guía de <a href="../Configuracion_Sistema/">Configuración del Sistema</a>.</p>
+</blockquote>
+<p>Una vez revisado acceder a <strong>enCONNECT</strong> y seleccionar el servidor y la base de datos.</p>
+<hr />
+<h3 id="12-error-de-conexion-a-fabrica">1.2. Error de conexión a fábrica</h3>
+<p><strong>Descripción del error:</strong><br />
+  Al intentar conectarse a fábrica, aparece un error indicando que la ruta de ejecución para conectar con <strong>Logikal</strong> no está definida correctamente.</p>
+<p><img alt="Error ruta" src="../images/Erros/error_path.jpg" /></p>
+<p><strong>Solución:</strong><br />
+  Verifica que la ruta de la aplicación <strong>Logikal</strong> sea la correcta.</p>
+<ul>
+<li>En ENBLAU, dirígete a:<br />
+<strong>General → Logikal - Conexión y Proyectos</strong>.</li>
+</ul>
+<p><img alt="Solución ruta 1" src="../images/Erros/solucion_path2.jpg" /></p>
+<p><img alt="Solución ruta 2" src="../images/Erros/solucion_path.jpg" /></p>
+<hr />
+<h3 id="13-error-de-interfaz-con-erp-logikal">1.3. Error de interfaz con ERP Logikal</h3>
+<p><strong>Descripción del error:</strong><br />
+  Al intentar conectarse a fábrica (Logikal), se muestra un error indicando que no se encuentra una licencia válida para la <strong>interfaz ERP</strong> de Logikal.</p>
+<p><img alt="Error ERP Logikal" src="../images/Erros/error_ERP.jpg" /></p>
+<p><strong>Solución:</strong><br />
+  Para establecer la conexión con fábrica, es necesario tener instalado el <strong>módulo ERP de Logikal</strong>.<br />
+  Contacta con <strong>Orgadata</strong> para gestionar la licencia:</p>
+<ul>
+<li>Email: <a href="mailto:customer.support@orgadata.com">customer.support@orgadata.com</a>  </li>
+<li>Llama al técnico responsable de soporte de Logikal.</li>
+</ul>
+<hr />
+<h3 id="14-error-acceso-a-fabrica-logikal">1.4. Error acceso a fábrica Logikal</h3>
+<p><strong>Descripción del error:</strong><br />
+  Al intentar conectarse a fábrica (Logikal), se muestra un error de acceso en la ruta de la carpeta donde está ejecutando Logikal.</p>
+<p><img alt="Error ERP Logikal" src="../images/Erros/error_ruta.jpg" /></p>
+<p><strong>Solución:</strong><br />
+  Para establecer la conexión con fábrica, es necesario tener la carpeta como de confianza. Para eso, desde Windows en el apartado <strong>Redes e Internet &gt; Opciones de Internet</strong>:</p>
+<p><img alt="Error ERP Logikal" src="../images/Erros/error_ruta2.jpg" /></p>
+<p>Luego en <strong>Propiedades: Internet</strong> ir a la pestaña de <strong>Seguridad &gt; Intranet local &gt; Sitios &gt; Opciones avanzadas</strong> y añadir esos 2 sitios web <strong>file://servidor</strong> y <strong>servidor</strong>.</p>
+<p><img alt="Error ERP Logikal" src="../images/Erros/error_ruta3.jpg" /></p>
+<hr />
+<h3 id="15-error-de-conexion-al-servidor-desde-ensite">1.5. Error de conexión al servidor desde enSITE</h3>
+<p><strong>Descripción del error:</strong><br />
+  Al intentar conectarse al servidor desde la aplicación <strong>enSITE</strong> (tablet), se muestra un mensaje de error relacionado con la conexión al servidor SQL.</p>
+<p><img alt="Error enSITE" src="../images/Erros/error_ensite.jpg" /></p>
+<p><img alt="Error enSITE" src="../images/Erros/error_ensite2.jpg" /></p>
+<hr />
+<p><strong>Solución:</strong></p>
+<ol>
+<li>
+<p><strong>Verificar la red:</strong><br />
+    Asegúrate de que la tablet esté conectada a la <strong>misma red local</strong> que el servidor donde se encuentra la base de datos.</p>
+</li>
+<li>
+<p><strong>Revisar el firewall y antivirus:</strong><br />
+    Comprueba que el <strong>firewall</strong> y/o <strong>antivirus</strong> no estén bloqueando la conexión entre el dispositivo y el servidor SQL.<br />
+    Añade reglas o excepciones si es necesario.</p>
+</li>
+<li>
+<p><strong>Verificar configuración de puertos:</strong><br />
+    Desde el servidor asegúrate de que los <strong>puertos utilizados por SQL Server estén habilitados</strong>, incluyendo:</p>
+<ul>
+<li>
+<p><strong>1433/TCP</strong> (puerto estándar de SQL Server). Verificar y configurar en <strong>SQL Server Configuration Manager</strong>:  </p>
+<ul>
+<li>Ir a <strong>SQL Server Network Configuration → Protocols for ENDADES2022</strong>.  </li>
+<li>En <strong>Propiedades de TCP/IP → IP Addresses</strong>, verificar que <span style="color:red"><strong>todas las IP's</strong></span> tengan el <strong>TCP Port</strong> configurados en <strong>1433</strong>. Y que los <strong>TCP Dynamic Port</strong> estén en <strong>0</strong>.</li>
+</ul>
+<p><img alt="Error enSITE" src="../images/Erros/error_ensite3.jpg" /></p>
+</li>
+<li>
+<p><strong>1434 UDP</strong> (para descubrimiento de instancia)
+  <!-- - Otros puertos personalizados que pueden estar siendo utilizados por enSITE, por ejemplo: **TCP-57073** --></p>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p>ℹ️<strong>Nota:</strong> Este error es común cuando hay conflictos en la configuración de red o seguridad. Validar todos los puntos anteriores suele resolver el problema.</p>
+</blockquote>
+<hr />
+<h3 id="16-error-de-archivo">1.6. Error de archivo</h3>
+<ul>
+<li><strong>Descripción del error:</strong><br />
+  Este error se produce cuando, en determinadas ocasiones, Windows corrompe algunos archivos. Puede estar relacionado con la configuración del sistema operativo.</li>
+</ul>
+<p><img alt="Error enSITE" src="../images/Erros/error_archivo.jpg" /></p>
+<hr />
+<p><strong>Solución:</strong></p>
+<ol>
+<li>
+<p><strong>Eliminar la carpeta:</strong><br />
+     Al eliminar la carpeta indicada en la ruta mostrada por el error, el problema queda resuelto.</p>
+<ul>
+<li>Cerrar ENBLAU.</li>
+<li>Eliminar la carpeta <code>C:\Users\User_name\AppData\Local\Endades</code></li>
+<li>Abrir ENBLAU.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="17-error-de-registro-de-licencia">1.7. Error de registro de licencia</h3>
+<p><strong>Descripción del error:</strong><br />
+  En algunas ocasiones, al abrir ENBLAU, el sistema puede solicitar nuevamente el registro de la licencia.</p>
+<p><img alt="Error registro" src="../images/Erros/error_registro.jpg" /></p>
+<p>Las posibles causas son las siguientes:</p>
+<ul>
+<li>ENBLAU está instalado en un servidor y el equipo desde el que se ejecuta accede mediante una unidad de red. La conexión puede haber fallado debido a cambios o actualizaciones en el servidor.</li>
+<li>El equipo desde el que se ejecuta ENBLAU no es visible en la red.</li>
+<li>Existen problemas de permisos sobre la unidad de red.</li>
+<li>Problema con la ip y nombre del servidor en la configuracion de red.</li>
+</ul>
+<p><strong>Solución:</strong></p>
+<ol>
+<li>
+<p>Verificar que la red esté correctamente configurada y que no exista ningún problema de conectividad.</p>
+</li>
+<li>
+<p>Solucion para el control de licencia de ENBLAU. Configurar correctamente el nombre del servidor y su dirección IP en el archivo hosts de Windows. Esta solución aplica cuando existe una configuración de red incorrecta.</p>
+</li>
+<li>
+<p>Desde el servidor, abrir <strong>enUPDATE</strong> y sincronizar la opción <strong>Licencia y actualizaciones</strong>. A continuación, abrir ENBLAU directamente desde el servidor para comprobar que se ejecuta correctamente.</p>
+<p><img alt="Error registro" src="../images/Erros/error_registro2.jpg" /></p>
+</li>
+<li>
+<p>Comprobar que la licencia de la aplicación esté al día en cuanto a pagos. La licencia caduca de forma automática, en ese caso, contactar con soporte técnico a través de <strong>comercial@endades.com</strong>.</p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Importante</strong>: Es obligatorio utilizar como mínimo <strong>SQL Server 2022</strong> para garantizar la compatibilidad con las versiones de ENBLAU y enSITE.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Requisitos_enSITE/" class="btn btn-neutral float-left" title="Requisitos instalación enSITE"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Requisitos_enSITE/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+  
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

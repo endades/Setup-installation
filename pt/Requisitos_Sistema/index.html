@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Requisitos do sistema - Endades Support</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Requisitos do sistema";
+        var mkdocs_page_input_path = "pt/Requisitos_Sistema.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../" class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">Início</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requisitos do sistema</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-requisitos-de-instalacao-do-cliente">1. Requisitos de instalação do cliente</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-requisitos-recomendados">1.1 Requisitos recomendados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-requisitos-minimos">1.2 Requisitos mínimos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-servidor">2. Servidor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-solucao-cliente-servidor">2.1 Solução cliente-servidor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-solucao-terminal-server">2.2 Solução Terminal Server</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-terminal-server-com-acesso-a-unidade-de-rede">2.3 Terminal Server com acesso a unidade de rede</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-solucao-de-virtualizacao">2.4 Solução de virtualização</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#25-requisitos-do-servidor">2.5 Requisitos do servidor</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#sistemas-operacionais-suportados">Sistemas operacionais suportados</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#requisitos-no-pc">Requisitos no PC</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#discos-rigidos">Discos Rígidos</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-rede-e-conexao-a-internet">3. Rede e Conexão à Internet</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-conexao-a-internet">3.1 Conexão à Internet</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#requisitos-minimos">Requisitos Mínimos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#servicos-que-requerem-conexao-a-internet">Serviços que requerem conexão à Internet</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-conexao-de-rede">3.2 Conexão de Rede</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-informacoes-tecnicas">4. Informações técnicas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-conexao-a-internet">4.1 Conexão à Internet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-velocidades-recomendadas">4.2 Velocidades recomendadas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-conexao-de-rede">4.3 Conexão de Rede</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Instalador Endades Suite</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">Configuração do sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">Requisitos do ambiente ENBLAU</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">Requisitos de instalação enSITE</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Possíveis erros</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Requisitos do sistema</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="requisitos-do-sistema">Requisitos do Sistema</h1>
+<h2 id="1-requisitos-de-instalacao-do-cliente">1. Requisitos de instalação do cliente</h2>
+<p>A instalação do cliente (servidor) é uma instalação local em um computador.</p>
+<hr />
+<h3 id="11-requisitos-recomendados">1.1 Requisitos recomendados</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Especificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema Operacional</td>
+<td>Windows 11 Pro; .NET Framework versão 4.8 ou superior</td>
+</tr>
+<tr>
+<td>Processador</td>
+<td>Intel Core i7 Gen10 / AMD Ryzen 7 Série 5000</td>
+</tr>
+<tr>
+<td>Memória</td>
+<td>Sistema operacional 64 bits, 16 GB de RAM</td>
+</tr>
+<tr>
+<td>Disco Rígido</td>
+<td>SSD, 150 GB de espaço disponível</td>
+</tr>
+<tr>
+<td>Conexões</td>
+<td>USB</td>
+</tr>
+<tr>
+<td>Resolução</td>
+<td>1920 px x 1080 px</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12-requisitos-minimos">1.2 Requisitos mínimos</h3>
+<blockquote>
+<p><strong>Nota:</strong><br />
+Para obter maior desempenho, recomenda-se utilizar discos SSD. Eles são muito mais rápidos no processamento que os HDDs convencionais.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Especificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema Operacional</td>
+<td>Windows 10 Versão 22H2; .NET Framework versão 4.8</td>
+</tr>
+<tr>
+<td>Processador</td>
+<td>Intel Core i5 Gen10 / AMD Ryzen Série 2000</td>
+</tr>
+<tr>
+<td>Memória</td>
+<td>SO 64 bits: 4 GB RAM<br>SO 64 bits: 6 GB RAM</td>
+</tr>
+<tr>
+<td>Disco Rígido</td>
+<td>80 GB de espaço disponível</td>
+</tr>
+<tr>
+<td>Conexões</td>
+<td>USB</td>
+</tr>
+<tr>
+<td>Resolução</td>
+<td>1280 px x 1024 px</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-servidor">2. Servidor</h2>
+<h3 id="21-solucao-cliente-servidor">2.1 Solução cliente-servidor</h3>
+<p>Recomenda-se uma solução cliente-servidor se o software precisar ser distribuído para vários clientes a partir de uma localização central.<br />
+Nesse caso, o software só precisa ser instalado em um único servidor.</p>
+<hr />
+<h3 id="22-solucao-terminal-server">2.2 Solução Terminal Server</h3>
+<p>Recomenda-se uma solução Terminal Server se vários usuários utilizarem o software diretamente no servidor terminal.<br />
+Nesse caso, o software só precisa ser instalado em um único servidor terminal.</p>
+<hr />
+<h3 id="23-terminal-server-com-acesso-a-unidade-de-rede">2.3 Terminal Server com acesso a unidade de rede</h3>
+<p>É possível combinar uma solução Terminal Server e uma solução cliente-servidor.</p>
+<p>Em um ambiente de Terminal Server, uma instalação central do software é utilizada diretamente por um ou mais usuários a partir do servidor.<br />
+Clientes também podem ser utilizados através de uma solução cliente-servidor.</p>
+<hr />
+<h3 id="24-solucao-de-virtualizacao">2.4 Solução de virtualização</h3>
+<p>A virtualização de servidores é usada quando vários servidores virtuais precisam funcionar sobre o mesmo hardware físico.<br />
+Um software de virtualização é instalado em um servidor host, fornecendo recursos às máquinas virtuais.</p>
+<blockquote>
+<p>A virtualização pode ser usada, mas é esperado perda de desempenho.<br />
+A alocação não física de núcleos e o uso de <strong>overprovisioning</strong> podem causar perdas adicionais.<br />
+Dependendo do grau de <strong>overprovisioning</strong>, pode haver degradação de desempenho se outros sistemas gerarem carga no hypervisor e consumirem recursos.<br />
+Isso é especialmente verdadeiro se limites fixos, prioridades ou reservas não forem configurados.<br />
+Limites fixos podem afetar negativamente a distribuição de carga, impedindo que recursos não utilizados do hypervisor sejam temporariamente atribuídos a outros sistemas.</p>
+</blockquote>
+<hr />
+<h3 id="25-requisitos-do-servidor">2.5 Requisitos do servidor</h3>
+<h4 id="sistemas-operacionais-suportados">Sistemas operacionais suportados</h4>
+<ul>
+<li>Windows Server 2016  </li>
+<li>Windows Server 2019  </li>
+<li>Windows Server 2022  </li>
+<li>.NET Framework versão 4.8  </li>
+</ul>
+<h4 id="requisitos-no-pc">Requisitos no PC</h4>
+<ul>
+<li>É necessário atender aos seguintes requisitos para o cliente: <a href="#1-requisitos-de-instalação-do-cliente">Requisitos de instalação do cliente</a></li>
+</ul>
+<h4 id="discos-rigidos">Discos Rígidos</h4>
+<blockquote>
+<p>Para obter maior desempenho, recomenda-se o uso de discos SSD.</p>
+</blockquote>
+<hr />
+<h2 id="3-rede-e-conexao-a-internet">3. Rede e Conexão à Internet</h2>
+<h3 id="31-conexao-a-internet">3.1 Conexão à Internet</h3>
+<h4 id="requisitos-minimos">Requisitos Mínimos</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo de Conexão</th>
+<th>Velocidade mínima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Download</td>
+<td>10 Mbit/s</td>
+</tr>
+<tr>
+<td>Upload</td>
+<td>1 Mbit/s</td>
+</tr>
+</tbody>
+</table>
+<h4 id="servicos-que-requerem-conexao-a-internet">Serviços que requerem conexão à Internet</h4>
+<ul>
+<li>Atualizações  </li>
+<li>Manutenção remota  </li>
+<li>Sistema de ajuda online  </li>
+<li>Changelogs  </li>
+</ul>
+<hr />
+<h3 id="32-conexao-de-rede">3.2 Conexão de Rede</h3>
+<p>É necessária uma conexão de rede estável para processar dados usando recursos compartilhados e/ou VPN em um ambiente de rede.</p>
+<p>| Velocidade mínima | 1 Gbit/s |</p>
+<hr />
+<h2 id="4-informacoes-tecnicas">4. Informações técnicas</h2>
+<h3 id="41-conexao-a-internet">4.1 Conexão à Internet</h3>
+<p>É necessária conexão à Internet para:</p>
+<ul>
+<li>Atualizações do programa  </li>
+<li>Suporte técnico  </li>
+<li>Manutenção remota  </li>
+<li>Sistema de ajuda online  </li>
+</ul>
+<h3 id="42-velocidades-recomendadas">4.2 Velocidades recomendadas</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mínima</th>
+<th>Recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Download</td>
+<td>6.016 kbit/s</td>
+<td>50.000 kbit/s</td>
+</tr>
+<tr>
+<td>Upload</td>
+<td>576 kbit/s</td>
+<td>10.000 kbit/s</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="43-conexao-de-rede">4.3 Conexão de Rede</h3>
+<blockquote>
+<p>⚠️ <strong>Atenção:</strong><br />
+Para garantir o acesso às unidades de rede, elas devem ser declaradas como <strong>"confiáveis"</strong>.<br />
+Entre em contato com o administrador do sistema em caso de dúvidas.</p>
+</blockquote>
+<p>O processamento de dados em rede usando pastas compartilhadas ou VPN requer:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de Conexão</th>
+<th>Velocidade mínima</th>
+<th>Recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rede</td>
+<td>100 Mbit/s</td>
+<td>1 Gbit/s</td>
+</tr>
+</tbody>
+</table>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Início"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Instalador_EndadesSuite/" class="btn btn-neutral float-right" title="Instalador Endades Suite">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Instalador_EndadesSuite/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

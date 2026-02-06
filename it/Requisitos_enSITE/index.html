@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Requisiti di installazione enSITE - Endades Support</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Requisiti di installazione enSITE";
+        var mkdocs_page_input_path = "it/Requisitos_enSITE.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../" class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">Inizio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">Requisiti di sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Installatore Endades Suite</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">Configurazione del sistema</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">Requisiti dell'ambiente ENBLAU</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requisiti di installazione enSITE</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-requisiti-per-la-configurazione-dellapp-ensite">1. Requisiti per la configurazione dell’App enSITE</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-requisiti-minimi">1.1. Requisiti minimi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-antivirus-e-firewall">1.2. Antivirus e Firewall</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-installazione-di-ensite">2. Installazione di enSITE</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Possibili errori</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Requisiti di installazione enSITE</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="requisiti-di-installazione-ensite">Requisiti di installazione enSITE</h1>
+<h2 id="1-requisiti-per-la-configurazione-dellapp-ensite">1. Requisiti per la configurazione dell’App enSITE</h2>
+<p>Prima di procedere con l’installazione e la configurazione di enSITE, è necessario effettuare alcune configurazioni preliminari.</p>
+<h3 id="11-requisiti-minimi">1.1. Requisiti minimi</h3>
+<p>I requisiti minimi per installare enSITE su smartphone o tablet dipendono dalla piattaforma e sono determinati da <strong>Google Play Store su Android</strong> e da <strong>App Store su iOS <span style="color:#C0392B;">(Attualmente non disponibile)</span></strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Android (Play Store)</th>
+<th>iOS (App Store)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versione minima del sistema</strong></td>
+<td>Android 15 (API 35); si consiglia comunque l’uso delle versioni più recenti</td>
+<td>iOS 16 (Apple richiede che nuove app e aggiornamenti supportino le ultime 3 versioni)</td>
+</tr>
+<tr>
+<td><strong>CPU / Architettura</strong></td>
+<td>ARM 64 bit (arm64-v8a); CPU multi-core sufficiente per app standard</td>
+<td>Tutti gli iPhone/iPad recenti utilizzano ARM 64 bit</td>
+</tr>
+<tr>
+<td><strong>RAM minima</strong></td>
+<td>3 GB minimi</td>
+<td>3 GB minimi; Apple non lo verifica esplicitamente, dipende dalla versione iOS e dal modello</td>
+</tr>
+<tr>
+<td><strong>Spazio libero</strong></td>
+<td>200 MB minimi per l’installazione</td>
+<td>200 MB minimi per l’installazione</td>
+</tr>
+<tr>
+<td><strong>Schermo / risoluzione</strong></td>
+<td>≥720p consigliata; compatibile con diverse dimensioni (smartphone e tablet)</td>
+<td>Tutti i dispositivi compatibili con iOS 16 o superiore</td>
+</tr>
+<tr>
+<td><strong>GPU / grafica</strong></td>
+<td>Integrata, compatibile con OpenGL ES o Vulkan</td>
+<td>Integrata nel SoC Apple; tutti compatibili con iOS 16</td>
+</tr>
+<tr>
+<td><strong>Connettività</strong></td>
+<td>Wi-Fi / Dati mobili; Bluetooth, GPS</td>
+<td>Wi-Fi / Dati mobili; Bluetooth, GPS</td>
+</tr>
+<tr>
+<td><strong>Permessi / politiche</strong></td>
+<td>Politiche di privacy se vengono gestiti dati; permessi minimi; conformità Google Play</td>
+<td>Politiche di privacy; conformità alle App Store Review Guidelines; permessi giustificati</td>
+</tr>
+<tr>
+<td><strong>Aggiornamenti</strong></td>
+<td>Dipende da Google Play e dalla compatibilità dichiarata</td>
+<td>Apple richiede compatibilità con le versioni più recenti; se il dispositivo non aggiorna iOS, non riceverà nuove versioni</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Osservazioni:</strong></p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Android:</strong> anche se l’hardware è sufficiente, l’aggiornamento dell’app può essere bloccato dai filtri del Play Store.</p>
+</li>
+<li>
+<p><strong>iOS:</strong> la limitazione principale è la versione di iOS supportata dal dispositivo. Apple gestisce automaticamente la compatibilità.</p>
+</li>
+<li>
+<p><strong>RAM e spazio di archiviazione:</strong> si tratta di raccomandazioni pratiche; Google non blocca ufficialmente le app in base alla RAM.</p>
+</li>
+</ol>
+<h3 id="12-antivirus-e-firewall">1.2. Antivirus e Firewall</h3>
+<blockquote>
+<p>Seguire le raccomandazioni della sezione <strong>2. Impostazioni antivirus e firewall</strong> in <a href="../Configuracion_Sistema/">Configurazione del Sistema</a>.</p>
+</blockquote>
+<hr />
+<h2 id="2-installazione-di-ensite">2. Installazione di enSITE</h2>
+<ol>
+<li>
+<p>Da un tablet o smartphone con connessione Wi-Fi, accedere al Play Store (Android) o all’App Store (iOS - <span style="color:#C0392B;">Attualmente non disponibile</span>), cercare enSITE e scaricare l’app.</p>
+<p><img alt="enSITE" src="../../images/Instal_config/ensite.jpg" /></p>
+</li>
+<li>
+<p>Aprire enSITE e inserire le seguenti informazioni:</p>
+<ul>
+<li>Codice di licenza (fornito da Endades)</li>
+<li>IP Server (gli stessi in cui è installato ENBLAU sul server)</li>
+<li>Database (lo stesso in cui è installato ENBLAU sul server)</li>
+<li>Utente – <strong>sa</strong> (Autenticazione SQL Server)</li>
+<li>Password – <strong>Stessa password di connessione al database di ENBLAU</strong> (Autenticazione SQL Server)</li>
+</ul>
+<p><img alt="enSITE" src="../../images/Instal_config/ensite1.jpg" /></p>
+</li>
+<li>
+<p>Login <strong>utente</strong> e <strong>password</strong> (gli stessi utilizzati in ENBLAU)</p>
+<p><img alt="enSITE" src="../../images/Instal_config/ensite2.jpg" /></p>
+<p><img alt="enSITE" src="../../images/Instal_config/ensite3.jpg" /></p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Per maggiori informazioni su possibili errori nel processo di connessione al server da enSITE, seguire il link: <a href="../Posibles_Errores/#15-error-de-conexion-al-servidor-desde-ensite">Possibili errori enSITE</a></p>
+</blockquote>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Importante:</strong> È obbligatorio utilizzare almeno <strong>SQL Server 2022</strong> per garantire la compatibilità con le future versioni di ENBLAU ed enSITE.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Requisitos_ENBLAU/" class="btn btn-neutral float-left" title="Requisiti dell'ambiente ENBLAU"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Posibles_Errores/" class="btn btn-neutral float-right" title="Possibili errori">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Requisitos_ENBLAU/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Posibles_Errores/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
