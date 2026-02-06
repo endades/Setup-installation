@@ -6,7 +6,7 @@ Before proceeding with the installation and configuration of enSITE, some prior 
 
 ### 1.1. Minimum requirements
 
-The minimum requirements to install enSITE on a mobile phone or tablet depend on the platform and are determined by the **Google Play Store on Android** and the **App Store on iOS**.
+The minimum requirements to install enSITE on a mobile phone or tablet depend on the platform and are determined by the **Google Play Store on Android** and the **App Store on iOS <span style="color:#C0392B;">(Currently unavailable)</span>**.
 
 | Requirement | Android (Play Store) | iOS (App Store) |
 |------------|----------------------|-----------------|
@@ -36,7 +36,7 @@ The minimum requirements to install enSITE on a mobile phone or tablet depend on
 
 ## 2. enSITE Installation
 
-1. From a tablet or mobile phone with a Wi-Fi connection, access the Play Store (Android) or App Store (iOS), search for enSITE, and download the app.
+1. From a tablet or mobile phone with a Wi-Fi connection, access the Play Store (Android) or App Store (iOS - <span style="color:#C0392B;">Currently unavailable</span>), search for enSITE, and download the app.
 
     ![enSITE](../images/Instal_config/ensite.jpg)
 
