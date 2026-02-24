@@ -30,31 +30,58 @@ The minimum requirements to install enSITE on a mobile phone or tablet depend on
 
 ### 1.2. Antivirus and Firewall
 
-> Follow the recommendations in section **2. Antivirus and firewall settings** in [System Configuration](Configuracion_Sistema.md).
+Follow the recommendations in section **2. Antivirus and firewall settings** in [System Configuration](Configuracion_Sistema.md).
+
+---
+
+### 1.3. TCP/IP Configuration
+
+From the server, make sure that the **ports used by SQL Server are enabled**, including:
+
+- **1433/TCP** (standard SQL Server port). Verify and configure it in **SQL Server Configuration Manager**:
+
+  - Go to **SQL Server Network Configuration → Protocols for ENDADES2022**.
+  - In **TCP/IP Properties → IP Addresses**, verify that <span style="color:red">**all IPs**</span> have the **TCP Port** configured as **1433**, and that the **TCP Dynamic Ports** are set to **0**.
+
+  ![Error enSITE](../images/Erros/error_ensite3.jpg)
 
 ---
 
 ## 2. enSITE Installation
 
-1. From a tablet or mobile phone with a Wi-Fi connection, access the Play Store (Android) or App Store (iOS - <span style="color:#C0392B;">Currently unavailable</span>), search for enSITE, and download the app.
+### 2.1. Download the enSITE App
 
-    ![enSITE](../images/Instal_config/ensite.jpg)
+- From a tablet or mobile device with WiFi connection, access Play Store (Android) / App Store (iOS – <span style="color:#C0392B;">Currently not available</span>) and search for and download the enSITE app.
 
-2. Open enSITE and enter the following information:
+  ![enSITE](../images/Instal_config/ensite.jpg)
 
-    - License code (provided by Endades)
-    - IP Server (the same where ENBLAU is installed on the server)
-    - Database (the same where ENBLAU is installed on the server)
-    - User – **sa** (SQL Server autentication)
-    - Password – **Same database connection password used by ENBLAU** (SQL Server autentication)
+---
 
-    ![enSITE](../images/Instal_config/ensite1.jpg)
+### 2.2. enSITE Server Configuration
 
-   - Login **username** and **password** (the same ones used in ENBLAU)
+Open enSITE and add the following information to configure the server in the app:
 
-    ![enSITE](../images/Instal_config/ensite2.jpg)
+- License code (provided by Endades)
 
-    ![enSITE](../images/Instal_config/ensite3.jpg)
+- Server IP (the same where ENBLAU is installed on the server)
+
+- Database (the same where ENBLAU is installed on the server)
+
+- User – **sa** (SQL Server authentication)
+
+- Password – **Same database connection password used for ENBLAU** (SQL Server authentication)
+
+  ![enSITE](../images/Instal_config/ensite1.jpg)
+
+---
+
+### 2.3. enSITE Login
+
+- Login with **username** and **password** (the same credentials used in ENBLAU)
+
+  ![enSITE](../images/Instal_config/ensite2.jpg)
+
+  ![enSITE](../images/Instal_config/ensite3.jpg)
 
 ---
 

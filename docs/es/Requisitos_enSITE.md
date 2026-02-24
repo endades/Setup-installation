@@ -30,31 +30,48 @@ Los requisitos mínimos para instalar enSITE en un móvil o tablet dependen de l
 
 ### 1.2. Antivirus y Firewall
 
-> Sigue las recomendaciones del apartado **2. Ajustes del antivirus y firewall** en [Configuración del Sistema](Configuracion_Sistema.md).
+Sigue las recomendaciones del apartado **2. Ajustes del antivirus y firewall** en [Configuración del Sistema](Configuracion_Sistema.md).
 
+### 1.3. Configuracion TCP/IP
+
+Desde el servidor asegúrate de que los **puertos utilizados por SQL Server estén habilitados**, incluyendo:
+
+- **1433/TCP** (puerto estándar de SQL Server). Verificar y configurar en **SQL Server Configuration Manager**:  
+
+    - Ir a **SQL Server Network Configuration → Protocols for ENDADES2022**.  
+    - En **Propiedades de TCP/IP → IP Addresses**, verificar que <span style="color:red">**todas las IP's**</span> tengan el **TCP Port** configurados en **1433**. Y que los **TCP Dynamic Port** estén en **0**.
+
+    ![Error enSITE](../images/Erros/error_ensite3.jpg)
 ---
 
 ## 2. Instalación de enSITE
 
-1. Desde una tablet o movil con conexion wifi acceder a Playstore (Android) / App Store (iOS – <span style="color:#C0392B;">Actualmente no está disponible</span>) buscar y bajar la app enSITE. 
+### 2.1. Bajar la app enSITE
+
+- Desde una tablet o movil con conexion wifi acceder a Playstore (Android) / App Store (iOS – <span style="color:#C0392B;">Actualmente no está disponible</span>) buscar y bajar la app enSITE. 
 
     ![enSITE](../images/Instal_config/ensite.jpg)
 
-2. Abrir enSITE y añadir esas informaciones:
+### 2.2. Configuración servidor enSITE
 
-    - Código de licencia (proporcionado por Endades)
+Abrir enSITE y añadir esas informaciones para la configuración del servidor en la app:
 
-    - IP Servidor (la misma donde tiene instalado ENBLAU en el servidor)
+- Código de licencia (proporcionado por Endades)
 
-    - Base de datos (la misma donde tiene instalado ENBLAU en el servidor)
+- IP Servidor (la misma donde tiene instalado ENBLAU en el servidor)
 
-    - Usuario - **sa** (Autenticación SQL serve)
+- Base de datos (la misma donde tiene instalado ENBLAU en el servidor)
 
-    - Contraseña - **Misma contraseña de conexión de base datos de ENBLAU** (Autenticación SQL serve)
+- Usuario - **sa** (Autenticación SQL serve)
+
+- Contraseña - **Misma contraseña de conexión de base datos de ENBLAU** (Autenticación SQL serve)
 
     ![enSITE](../images/Instal_config/ensite1.jpg)
 
-   - Login **usuario** y **contraseña** (el mismo que se utiliza en ENBLAU)
+
+### 2.3. Login enSITE
+
+- Login **usuario** y **contraseña** (el mismo que se utiliza en ENBLAU)
 
     ![enSITE](../images/Instal_config/ensite2.jpg)
 
