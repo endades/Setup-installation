@@ -18,6 +18,7 @@ plugins:
             - Configuración del sistema: Configuracion_Sistema.md
             - Requisitos del entorno ENBLAU: Requisitos_ENBLAU.md
             - Requisitos instalación enSITE: Requisitos_enSITE.md
+            - Requisitos del entorno enCONTROL: Requisitos_enCONTROL.md
             - Posibles errores: Posibles_Errores.md
         - locale: en
           name: English
@@ -29,6 +30,7 @@ plugins:
             - System configuration: Configuracion_Sistema.md
             - ENBLAU environment requirements: Requisitos_ENBLAU.md
             - enSITE installation requirements: Requisitos_enSITE.md
+            - enCONTROL environment requirements: Requisitos_enCONTROL.md
             - Possible errors: Posibles_Errores.md
         - locale: it
           name: Italiano
@@ -40,6 +42,7 @@ plugins:
             - Configurazione del sistema: Configuracion_Sistema.md
             - Requisiti dell'ambiente ENBLAU: Requisitos_ENBLAU.md
             - Requisiti di installazione enSITE: Requisitos_enSITE.md
+            - Requisiti dell'ambiente enCONTROL: Requisitos_enCONTROL.md
             - Possibili errori: Posibles_Errores.md
         - locale: pt
           name: Português
@@ -51,6 +54,7 @@ plugins:
             - Configuração do sistema: Configuracion_Sistema.md
             - Requisitos do ambiente ENBLAU: Requisitos_ENBLAU.md
             - Requisitos de instalação enSITE: Requisitos_enSITE.md
+            - Requisitos do ambiente enCONTROL: Requisitos_enCONTROL.md
             - Possíveis erros: Posibles_Errores.md
 
 theme:
