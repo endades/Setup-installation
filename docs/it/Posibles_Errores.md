@@ -45,7 +45,7 @@
     ![Soluzione percorso 2](../images/Erros/solucion_path.jpg)
 
   - Il percorso può anche essere modificato per tutti gli utenti da:  
-    **Impostazioni → Utenti → Logikal - Connessione e Progetti**
+    **Impostazioni → Utenti**. Modificare i campi nelle colonne *Percorso DLL di Logikal* e *Percorso di installazione di Logikal*.
 
     ![Soluzione percorso 3](../images/Erros/solucion_path3.jpg)
 

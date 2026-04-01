@@ -45,7 +45,7 @@
     ![Solution path 2](../images/Erros/solucion_path.jpg)
 
   - The path can also be changed for all users from:  
-    **Settings → Users → Logikal - Connection and Projects**
+    **Settings → Users**. Modify the fields in the columns *Logikal DLL Path* and *Logikal Installation Path*.
 
     ![Solution path 3](../images/Erros/solucion_path3.jpg)
 

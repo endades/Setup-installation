@@ -46,7 +46,7 @@
     ![Solución ruta 2](../images/Erros/solucion_path.jpg)
 
   - También se puede cambiar la ruta para todos los usuarios desde:  
-    **Configuración → Usuarios → Logikal - Conexión y Proyectos**.
+    **Configuración → Usuarios**. Modificar los campos de las columnas *Ruta DLL de Logikal* y *Ruta de instalación de Logikal*.
 
     ![Solución ruta 3](../images/Erros/solucion_path3.jpg)
 
