@@ -75,6 +75,10 @@ Aprire enSITE e inserire le seguenti informazioni per configurare il server nell
 
 ### 2.3. Login enSITE
 
+- Da ENBLAU - Utenti - **Accesso APP WEB**, assicurarsi che la casella **Consenti accesso** sia selezionata. Inoltre, per accedere a enSITE è **obbligatorio** avere una **Password** definita per l’utente.
+
+    ![enSITE](../images/Instal_config/ensite4.jpg)
+
 - Accedere con **utente** e **password** (le stesse credenziali utilizzate in ENBLAU)
 
   ![enSITE](../images/Instal_config/ensite2.jpg)

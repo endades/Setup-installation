@@ -40,9 +40,16 @@
   - In ENBLAU, andare su:  
     **Generale → Logikal - Connessione e Progetti**.
 
-  ![Soluzione percorso 1](../images/Erros/solucion_path2.jpg)
+    ![Soluzione percorso 1](../images/Erros/solucion_path2.jpg)
 
-  ![Soluzione percorso 2](../images/Erros/solucion_path.jpg)
+    ![Soluzione percorso 2](../images/Erros/solucion_path.jpg)
+
+  - Il percorso può anche essere modificato per tutti gli utenti da:  
+    **Impostazioni → Utenti → Logikal - Connessione e Progetti**
+
+    ![Soluzione percorso 3](../images/Erros/solucion_path3.jpg)
+
+    ![Soluzione percorso 4](../images/Erros/solucion_path4.jpg)
 
 ---
 

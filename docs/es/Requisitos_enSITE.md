@@ -71,11 +71,17 @@ Abrir enSITE y añadir esas informaciones para la configuración del servidor en
 
 ### 2.3. Login enSITE
 
+- Desde ENBLAU - Usuarios - **Acceso APP WEB** asegurar que la casilla **Permitir acceso** esté marcada. Además, para acceder a enSITE es **obligatorio** tener una **Contraseña** definida para el usuario. 
+
+    ![enSITE](../images/Instal_config/ensite4.jpg)
+
 - Login **usuario** y **contraseña** (el mismo que se utiliza en ENBLAU)
 
     ![enSITE](../images/Instal_config/ensite2.jpg)
 
     ![enSITE](../images/Instal_config/ensite3.jpg)
+
+
 
 ---
 

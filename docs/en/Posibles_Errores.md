@@ -40,9 +40,16 @@
   - In ENBLAU, go to:  
     **General → Logikal - Connection and Projects**.
 
-  ![Solution path 1](../images/Erros/solucion_path2.jpg)
+    ![Solution path 1](../images/Erros/solucion_path2.jpg)
 
-  ![Solution path 2](../images/Erros/solucion_path.jpg)
+    ![Solution path 2](../images/Erros/solucion_path.jpg)
+
+  - The path can also be changed for all users from:  
+    **Settings → Users → Logikal - Connection and Projects**
+
+    ![Solution path 3](../images/Erros/solucion_path3.jpg)
+
+    ![Solution path 4](../images/Erros/solucion_path4.jpg) 
 
 ---
 

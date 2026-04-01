@@ -39,11 +39,18 @@
   Verifica que la ruta de la aplicación **Logikal** sea la correcta.
     
   - En ENBLAU, dirígete a:  
-    **General → Logikal - Conexión y Proyectos**.
+    **Configuración → General → Logikal - Conexión y Proyectos**.
 
-  ![Solución ruta 1](../images/Erros/solucion_path2.jpg)
+    ![Solución ruta 1](../images/Erros/solucion_path2.jpg)
 
-  ![Solución ruta 2](../images/Erros/solucion_path.jpg)
+    ![Solución ruta 2](../images/Erros/solucion_path.jpg)
+
+  - También se puede cambiar la ruta para todos los usuarios desde:  
+    **Configuración → Usuarios → Logikal - Conexión y Proyectos**.
+
+    ![Solución ruta 3](../images/Erros/solucion_path3.jpg)
+
+    ![Solución ruta 4](../images/Erros/solucion_path4.jpg) 
 
 ---
 

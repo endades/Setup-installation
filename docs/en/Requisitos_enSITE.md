@@ -75,7 +75,11 @@ Open enSITE and add the following information to configure the server in the app
 
 ---
 
-### 2.3. enSITE Login
+### 2.3. enSITE 
+
+- From ENBLAU - Users - **WEB APP Access**, ensure that the **Allow access** checkbox is checked. Additionally, to access enSITE it is **mandatory** to have a **Password** defined for the user.
+
+    ![enSITE](../images/Instal_config/ensite4.jpg)
 
 - Login with **username** and **password** (the same credentials used in ENBLAU)
 

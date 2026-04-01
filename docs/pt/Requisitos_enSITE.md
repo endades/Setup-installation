@@ -75,6 +75,10 @@ Abrir o enSITE e adicionar as seguintes informações para configurar o servidor
 
 ### 2.3. Login enSITE
 
+- Em ENBLAU - Utilizadores - **Acesso APP WEB**, certifique-se de que a opção **Permitir acesso** está marcada. Além disso, para aceder ao enSITE é **obrigatório** ter uma **Palavra-passe** definida para o utilizador.
+
+    ![enSITE](../images/Instal_config/ensite4.jpg)
+
 - Iniciar sessão com **utilizador** e **palavra-passe** (as mesmas credenciais utilizadas no ENBLAU)
 
   ![enSITE](../images/Instal_config/ensite2.jpg)
