@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>enCONTROL environment requirements - Endades Support</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "enCONTROL environment requirements";
+        var mkdocs_page_input_path = "en/Requisitos_enCONTROL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../" class="icon icon-home"> Endades Support
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_Sistema/">System requirements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Instalador_EndadesSuite/">Endades Suite installer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Configuracion_Sistema/">System configuration</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_ENBLAU/">ENBLAU environment requirements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Requisitos_enSITE/">enSITE installation requirements</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">enCONTROL environment requirements</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-requirements-for-configuring-encontrol-workstations">1. Requirements for Configuring enCONTROL Workstations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-antivirus-and-firewall">1.1. Antivirus and Firewall</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-minimum-system-requirements-encontrol">2. Minimum System Requirements – enCONTROL</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-minimum-equipment-configuration">2.1. Minimum Equipment Configuration</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-permissions">3. Permissions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-connectivity">4. Connectivity</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Posibles_Errores/">Possible errors</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Endades Support</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">enCONTROL environment requirements</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="encontrol-environment-requirements">enCONTROL Environment Requirements</h1>
+<h2 id="1-requirements-for-configuring-encontrol-workstations">1. Requirements for Configuring enCONTROL Workstations</h2>
+<p>Before installing and configuring enCONTROL, it is necessary to carry out some preliminary configurations in the environment where the application will run.</p>
+<h3 id="11-antivirus-and-firewall">1.1. Antivirus and Firewall</h3>
+<p>Follow the recommendations in section <strong>2. Antivirus and firewall settings</strong> under <a href="../Configuracion_Sistema/">System Configuration</a>.</p>
+<hr />
+<h2 id="2-minimum-system-requirements-encontrol">2. Minimum System Requirements – enCONTROL</h2>
+<p>For the workstations where <strong>enCONTROL</strong> will be implemented, a wired-connected computer is required at the factory.</p>
+<h3 id="21-minimum-equipment-configuration">2.1. Minimum Equipment Configuration</h3>
+<p><strong>Computer equipment:</strong></p>
+<ul>
+<li>Can be a <strong>NUC</strong> (small and compact computer).</li>
+<li>Can be <strong>refurbished</strong>.</li>
+<li>It is sufficient that it has basic functional capacity to run the application and wired network connectivity.</li>
+</ul>
+<p><strong>Required peripherals:</strong></p>
+<ul>
+<li>1 Monitor (Touchscreen is recommended)</li>
+<li>1 Mouse</li>
+<li>1 Keyboard</li>
+</ul>
+<h2 id="3-permissions">3. Permissions</h2>
+<ul>
+<li>It is recommended that the equipment has <strong>all necessary permissions</strong> to ensure the proper functioning of the application and connectivity with the required systems.</li>
+</ul>
+<hr />
+<h2 id="4-connectivity">4. Connectivity</h2>
+<ul>
+<li>The equipment must be installed with a <strong>wired network connection</strong>.</li>
+<li>Stable access to the enCONTROL system must be guaranteed from the factory workstation.</li>
+</ul>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Requisitos_enSITE/" class="btn btn-neutral float-left" title="enSITE installation requirements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Posibles_Errores/" class="btn btn-neutral float-right" title="Possible errors">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Requisitos_enSITE/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Posibles_Errores/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
