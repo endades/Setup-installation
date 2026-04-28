@@ -33,6 +33,9 @@ The client (server) installation is a local installation on a computer.
 | Connections      | USB                                                        |
 | Resolution       | 1280 px x 1024 px                                         |
 
+>**Important note regarding storage:**
+
+>To use SQL Server, the storage subsystem must meet the compatibility requirements specified by Microsoft for database engines.
 ---
 
 ## 2. Server

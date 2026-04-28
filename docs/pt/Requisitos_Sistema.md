@@ -33,6 +33,9 @@ A instalação do cliente (servidor) é uma instalação local em um computador.
 | Conexões          | USB                                                     |
 | Resolução         | 1280 px x 1024 px                                      |
 
+> **Observação importante sobre o disco:**
+
+> Para a utilização do SQL Server, o armazenamento deve cumprir os requisitos de compatibilidade indicados pela Microsoft para motores de bases de dados.>
 ---
 
 ## 2. Servidor

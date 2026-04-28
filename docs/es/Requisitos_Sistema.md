@@ -31,7 +31,11 @@ La instalación del cliente (servidor) es una instalación local en un ordenador
 | Memoria           | Sistema operativo de 64 bits: 4 GB de RAM<br>Sistema operativo de 64 bits: 6 GB de RAM |
 | Disco Duro        | 80 GB de espacio disponible                                |
 | Conexiones        | USB                                                        |
-| Resolución        | 1280 px x 1024 px                                          |
+| Resolución        | 1280 px x 1024 px     
+
+> **Observación importante sobre el disco:**
+
+> Para la utilizacion de SQL Server, el almacenamiento debe cumplir los requisitos de compatibilidad indicados por Microsoft para motores de bases de datos.
 
 ---
 
